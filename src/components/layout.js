@@ -43,10 +43,9 @@ const Layout = ({children}) => (
                         <div className={"col-2"}>
                             <div className={"widget__item"}>
                                 <ul className={"links"}>
-                                    <h4>HiStaff</h4>
+                                    <h4>Bitlingo</h4>
                                     <ul>
-                                        <li><Link to="/integrations/slack" title={"Integrations"}>Integrations</Link></li>
-                                        <li><Link to="/about" title={"About Us"}>About</Link></li>
+                                        <li><Link to="/about" title={"About Us"}>Über uns</Link></li>
                                         <li><a href={"https://bitlingo.de/blog"}>Blog</a></li>
                                         <li><a className={"links__special"} href={"https://feedback.bitlingo.de/"} target={"_blank"} title={"We look forward to receiving your great feedback"}>Feedback</a></li>
                                     </ul>

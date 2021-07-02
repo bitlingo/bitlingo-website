@@ -28,12 +28,12 @@ const IndexPage = () => (
         <div className={"call-to-action"}>
             <div className={"container"}>
                 <div className={"call-to-action__content"}>
-                    <h2>Sign up for free</h2>
-                    <p>Sign up and start increasing the productivity of your business with HiStaff.</p>
+                    <h2>Interesse an einem Vortrag?</h2>
+                    <p>Treten Sie in Kontakt mit dem Bitlingo Team und lassen Sie sich beraten.</p>
                 </div>
 
                 <div className={"button"}>
-                    <a href="https://app.bitlingo.de" target={"_blank"}>Get Started</a>
+                    <a href="mailto:info@bitlingo.de" target={"_blank"}>Ich möchte Lernen!</a>
                 </div>
             </div>
         </div>
