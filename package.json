@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bitlingo-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Bitlingo GbR website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bitlingo GbR <info@bitlingo.de>",
   "dependencies": {
     "gatsby": "^2.7.5",
     "gatsby-cli": "^2.7.47",
@@ -27,7 +27,7 @@
     "sass": "^1.20.3"
   },
   "keywords": [
-    "gatsby"
+    "bitlingo"
   ],
   "license": "MIT",
   "scripts": {
@@ -35,14 +35,13 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/bitlingo/bitlingo-website"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/bitlingo/bitlingo-website/issues"
   }
 }

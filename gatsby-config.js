@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: `HiStaff`,
+        title: `Bitlingo`,
         description: `Make your Staff and Workspace Happy`,
-        author: `@mostafasoufi`,
+        author: `@bitlingo`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
