@@ -1,16 +1,16 @@
 import React from "react"
 
 const PresentationPictureLeft = ({ title, text, picture }) => (
-  <div className={"feature__item"}>
+  <div className={"presentation__item"}>
     <div className={"row"}>
       <div className={"col-6 first"}>
         <div className={"thumbnail"}>
-          <img alt={"Presentaion preview"} src={picture} />
+          <img alt={"Presentation preview"} src={picture} />
         </div>
       </div>
       <div className={"col-6"}>
-        <div className={"feature__content"}>
-          <h2>{title}</h2>
+        <div className={"presentation__content"}>
+          <h3>{title}</h3>
           <p>{text}</p>
         </div>
       </div>
@@ -19,17 +19,17 @@ const PresentationPictureLeft = ({ title, text, picture }) => (
 )
 
 const PresentationPictureRight = ({ title, text, picture }) => (
-  <div className={"feature__item"}>
+  <div className={"presentation__item"}>
     <div className={"row"}>
       <div className={"col-6 first"}>
-        <div className={"feature__content"}>
-          <h2>{title}</h2>
+        <div className={"presentation__content"}>
+          <h3>{title}</h3>
           <p>{text}</p>
         </div>
       </div>
       <div className={"col-6"}>
         <div className={"thumbnail"}>
-          <img alt={"Presentaion preview"} src={picture} />
+          <img alt={"Presentation preview"} src={picture} />
         </div>
       </div>
     </div>

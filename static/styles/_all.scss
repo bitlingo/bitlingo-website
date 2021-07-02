@@ -22,6 +22,17 @@ body {
     }
   }
 
+  .presentations {
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #1E1C21;
+      text-align: center;
+    }
+  }
+  
+
   .team {
     h2 {
       font-size: 36px;
@@ -166,7 +177,7 @@ body {
   }
 
   .features {
-    .feature__item {
+    .presentation__item {
       padding: 50px 0;
 
       .row {
@@ -178,15 +189,15 @@ body {
         }
       }
 
-      .feature__content {
+      .presentation__content {
         justify-content: center;
         display: flex;
         flex-direction: column;
 
-        h2 {
-          font-size: 36px;
+        h3 {
+          font-size: 24px;
           font-weight: bold;
-          margin-bottom: 15px;
+          margin-bottom: 12px;
           color: #1E1C21;
         }
 

@@ -21,7 +21,7 @@ const AboutPage = () => (
 
         <div className={"container"}>
             <div className={"features"}>
-                <div className={"feature__item"}>
+                <div className={"presentation__item"}>
                     <div className={"row"}>
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
@@ -30,7 +30,7 @@ const AboutPage = () => (
                         </div>
 
                         <div className={"col-6"}>
-                            <div className={"feature__content"}>
+                            <div className={"presentation__content"}>
                                 <h2>Slack Event Webhook</h2>
                                 <p>The ability to send Event alerts to any channel when a new event is created by anyone.</p>
                             </div>
@@ -38,10 +38,10 @@ const AboutPage = () => (
                     </div>
                 </div>
 
-                <div className={"feature__item"}>
+                <div className={"presentation__item"}>
                     <div className={"row"}>
                         <div className={"col-6"}>
-                            <div className={"feature__content"}>
+                            <div className={"presentation__content"}>
                                 <h2>Slack News Webhook</h2>
                                 <p>Let staff know about any news on the Slack channel.</p>
                             </div>
@@ -55,7 +55,7 @@ const AboutPage = () => (
                     </div>
                 </div>
 
-                <div className={"feature__item"}>
+                <div className={"presentation__item"}>
                     <div className={"row"}>
                         <div className={"col-6 first"}>
                             <div className={"thumbnail"}>
@@ -64,7 +64,7 @@ const AboutPage = () => (
                         </div>
 
                         <div className={"col-6"}>
-                            <div className={"feature__content"}>
+                            <div className={"presentation__content"}>
                                 <h2>Slack Note Webhook</h2>
                                 <p>Staff can see an alert about any post on the public board.</p>
                             </div>
