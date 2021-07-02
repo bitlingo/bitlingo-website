@@ -1,7 +1,7 @@
 import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../../static/images/logo.svg"
+import logo from "../../static/images/logo.png"
 
 const Header = ({siteTitle}) => (
     <header>
@@ -9,12 +9,12 @@ const Header = ({siteTitle}) => (
             <div className={"top-menu"}>
                 <div className={"logo"}>
                     <Link to="/" title={"Bitlingo"}>
-                        <img alt={"Logo"} src={logo}/>
+                        <img alt={"Logo"} src={logo} width="200"/>
                     </Link>
                 </div>
 
                 <div className={"get-started"}>
-                    <a href={"https://app.histaff.io"}>Get Started</a>
+                    <a href={"https://bitlingo.de"}>Anfragen</a>
                 </div>
             </div>
         </div>

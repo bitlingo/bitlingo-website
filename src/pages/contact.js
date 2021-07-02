@@ -20,7 +20,7 @@ const ContactPage = () => (
                     <div className={"col-5"}>
                         <div className={"contact-items"}>
                             <p>Plain email is the best way to contact us.</p>
-                            <h2>contact@histaff.io</h2>
+                            <h2>contact@bitlingo.de</h2>
                         </div>
                     </div>
                 </div>
