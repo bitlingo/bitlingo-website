@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Team from "../components/team"
-import featureImage from "../../static/images/hero.png";
+import featureImage from "../../static/images/vortrag.jpg";
 import thumbnailEvent from "../../static/images/feature-event.png"
 import thumbnailBoard from "../../static/images/feature-board.png"
 import thumbnailNews from "../../static/images/feature-news.png"
@@ -17,7 +17,7 @@ const IndexPage = () => (
         <div className={"page-header home"}>
             <h1>Bitlingo GbR</h1>
             <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
-            <img alt={"Dashboard"} src={featureImage}/>
+            <img alt={"Dashboard"} src={featureImage} style={{borderRadius: "10px"}}/>
         </div>
 
         <div className={"container"}>

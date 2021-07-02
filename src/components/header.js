@@ -14,7 +14,7 @@ const Header = ({siteTitle}) => (
                 </div>
 
                 <div className={"get-started"}>
-                    <a href={"https://bitlingo.de"}>Anfragen</a>
+                    <a href={"mailto:info@bitlingo.de"}>Anfragen</a>
                 </div>
             </div>
         </div>
