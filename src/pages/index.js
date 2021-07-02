@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Team from "../components/team"
 import featureImage from "../../static/images/hero.png";
 import thumbnailEvent from "../../static/images/feature-event.png"
 import thumbnailBoard from "../../static/images/feature-board.png"
@@ -103,8 +104,10 @@ const IndexPage = () => (
                                 <p>Discard traditional ways to archive staff documents and information, and try new ways to store and archive them in HiStaff easily.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
+
+                <Team></Team>
             </div>
         </div>
 

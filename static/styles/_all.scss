@@ -22,6 +22,62 @@ body {
     }
   }
 
+  .team {
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #1E1C21;
+      text-align: center;
+    }
+    .members {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 4rem 0;
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+    
+        .profile-picture {
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+    
+        .texts {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .text {
+            margin: 0.4rem 0;
+          }
+
+          .name {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0.9rem 0;
+          }
+
+          .title {
+            font-weight: bold;
+          }
+  
+          .secondary {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+        
+      }
+    }
+  }
+
   header {
     background-color: #FDFAFF;
     display: block;
