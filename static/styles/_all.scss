@@ -230,12 +230,13 @@ body {
     }
 
     .pricing-container {
-      justify-content: center;
-      align-items: center;
+      text-align: center;
+      
       .pricing-sliders {
         display: flex;
         flex-direction: column;
-        max-width: 50%;
+        max-width: auto;
+        margin: 2rem 0;
       }
     }
 
