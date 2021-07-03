@@ -12,6 +12,7 @@ const PresentationPictureLeft = ({ title, text, picture }) => (
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
+          <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}><p>Vortrag anfragen</p></a>
         </div>
       </div>
     </div>
@@ -25,6 +26,7 @@ const PresentationPictureRight = ({ title, text, picture }) => (
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
+          <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}><p>Vortrag anfragen</p></a>
         </div>
       </div>
       <div className={"col-6"}>
