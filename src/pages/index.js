@@ -3,8 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Team from "../components/team"
+import Pricing from "../components/pricing"
 import featureImage from "../../static/images/vortrag.jpg"
-import Presentations from "../components/presentations"
 
 const IndexPage = () => (
     <Layout>
@@ -18,10 +18,8 @@ const IndexPage = () => (
 
         <div className={"container"}>
             <div className={"features"}>
-                
-                <Presentations />
-
-                <Team></Team>
+                <Team />
+                <Pricing />
             </div>
         </div>
 
