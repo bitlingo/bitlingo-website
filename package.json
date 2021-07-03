@@ -5,26 +5,26 @@
   "version": "0.1.0",
   "author": "Bitlingo GbR <info@bitlingo.de>",
   "dependencies": {
-    "gatsby": "^2.7.5",
-    "gatsby-cli": "^2.7.47",
-    "gatsby-image": "^2.1.2",
-    "gatsby-omni-font-loader": "^1.1.1",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.1",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
-    "gatsby-plugin-sharp": "^2.1.2",
-    "gatsby-source-filesystem": "^2.0.37",
-    "gatsby-transformer-sharp": "^2.1.20",
-    "node-sass": "^4.12.0",
+    "gatsby": "^3.8.1",
+    "gatsby-cli": "^3.8.0",
+    "gatsby-image": "^3.8.0",
+    "gatsby-omni-font-loader": "^1.3.1",
+    "gatsby-plugin-manifest": "^3.8.0",
+    "gatsby-plugin-offline": "^4.8.0",
+    "gatsby-plugin-react-helmet": "^4.8.0",
+    "gatsby-plugin-sass": "^4.8.0",
+    "gatsby-plugin-sharp": "^3.8.0",
+    "gatsby-source-filesystem": "^3.8.0",
+    "gatsby-transformer-sharp": "^3.8.0",
+    "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.1",
-    "sass": "^1.20.3"
+    "prettier": "^2.3.2",
+    "sass": "^1.35.1"
   },
   "keywords": [
     "bitlingo"
