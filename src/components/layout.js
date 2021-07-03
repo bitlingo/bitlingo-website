@@ -60,7 +60,6 @@ const Layout = ({children}) => (
                                     <ul>
                                         <li><Link to="/contact" title={"Contact Us"}>Contact</Link></li>
                                         <li><Link to="/privacy" title={"Privacy Policy"}>Privacy</Link></li>
-                                        <li><Link to="/terms" title={"Terms Of Use"}>Terms Of Use</Link></li>
                                     </ul>
                                 </div>
                             </div>
