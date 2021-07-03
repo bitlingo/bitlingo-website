@@ -8,16 +8,30 @@ body {
     font-family: Inter;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: PT Serif;
     line-height: 43px;
-    color: #1E1C21;
+    color: #1e1c21;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    color: #1e1c21;
+    line-height: 54px;
   }
 
   a {
     color: $bitlingo-brand;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       color: $bitlingo-brand;
     }
   }
@@ -27,11 +41,10 @@ body {
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 15px;
-      color: #1E1C21;
+      color: #1e1c21;
       text-align: center;
     }
   }
-  
 
   .team {
     margin-bottom: 2rem;
@@ -39,7 +52,7 @@ body {
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 15px;
-      color: #1E1C21;
+      color: #1e1c21;
       text-align: center;
     }
     .members {
@@ -53,13 +66,13 @@ body {
         flex-direction: column;
         align-items: center;
         width: 300px;
-    
+
         .profile-picture {
           border-radius: 50%;
           width: 200px;
           height: 200px;
         }
-    
+
         .texts {
           display: flex;
           flex-direction: column;
@@ -79,19 +92,18 @@ body {
           .title {
             font-weight: bold;
           }
-  
+
           .secondary {
             font-size: 14px;
             font-weight: 300;
           }
         }
-        
       }
     }
   }
 
   header {
-    background-color: #FDFAFF;
+    background-color: #fdfaff;
     display: block;
     padding: 39px 0;
 
@@ -118,7 +130,7 @@ body {
           background: $bitlingo-brand;
           border-radius: 4px;
           text-align: center;
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
     }
@@ -134,7 +146,7 @@ body {
       font-style: normal;
       font-weight: bold;
       font-size: 48px;
-      color: #1E1C21;
+      color: #1e1c21;
       padding: 0 0 15px 0;
       line-height: 54px;
     }
@@ -143,7 +155,7 @@ body {
       font-size: 36px;
       font-style: normal;
       font-weight: bold;
-      color: #1E1C21;
+      color: #1e1c21;
       line-height: 54px;
     }
 
@@ -167,7 +179,8 @@ body {
       padding-top: 1px;
       padding-bottom: 50px;
 
-      h1, h2 {
+      h1,
+      h2 {
         padding-top: 0;
       }
 
@@ -199,8 +212,8 @@ body {
           font-size: 24px;
           font-weight: bold;
           margin-bottom: 12px;
-          color: #1E1C21;
-          line-height: 2.0rem;
+          color: #1e1c21;
+          line-height: 2rem;
         }
 
         p {
@@ -213,6 +226,16 @@ body {
         img {
           max-width: 100%;
         }
+      }
+    }
+
+    .pricing-container {
+      justify-content: center;
+      align-items: center;
+      .pricing-sliders {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
       }
     }
 
@@ -323,7 +346,7 @@ body {
       text-align: center;
       font-size: 26px;
       margin-bottom: 99px;
-      color: #1E1C21;
+      color: #1e1c21;
     }
 
     .item {
@@ -349,9 +372,14 @@ body {
   .integration-guid {
     width: 80%;
     margin: 0 auto;
-    color: #1E1C21;
+    color: #1e1c21;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: Inter;
     }
 
@@ -364,7 +392,12 @@ body {
     }
 
     .content {
-      h1, h2, h3, h4, h5, h6 {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         margin: 0;
       }
 
@@ -415,7 +448,8 @@ body {
               font-size: 14px;
               color: #797283;
 
-              &:hover, &:active {
+              &:hover,
+              &:active {
                 color: $bitlingo-brand;
               }
             }
