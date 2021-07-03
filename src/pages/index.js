@@ -1,14 +1,14 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Team from "../components/team"
 import featureImage from "../../static/images/vortrag.jpg"
 import Presentations from "../components/presentations"
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Bitlingo GbR"/>
+        <Seo title="Bitlingo GbR"/>
 
         <div className={"page-header home"}>
             <h1>Bitlingo GbR</h1>
@@ -33,7 +33,7 @@ const IndexPage = () => (
                 </div>
 
                 <div className={"button"}>
-                    <a href="mailto:info@bitlingo.de" target={"_blank"}>Ich möchte Lernen!</a>
+                    <a href="mailto:info@bitlingo.de">Ich möchte Lernen!</a>
                 </div>
             </div>
         </div>

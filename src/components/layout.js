@@ -47,7 +47,7 @@ const Layout = ({children}) => (
                                     <ul>
                                         <li><Link to="/about" title={"About Us"}>Über uns</Link></li>
                                         <li><a href={"https://bitlingo.de/blog"}>Blog</a></li>
-                                        <li><a className={"links__special"} href={"https://feedback.bitlingo.de/"} target={"_blank"} title={"We look forward to receiving your great feedback"}>Feedback</a></li>
+                                        <li><a className={"links__special"} href={"https://feedback.bitlingo.de/"} target={"_blank"} rel="noreferrer" title={"We look forward to receiving your great feedback"}>Feedback</a></li>
                                     </ul>
                                 </ul>
                             </div>
@@ -69,9 +69,9 @@ const Layout = ({children}) => (
                         <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"social"}>
-                                    <a href="https://twitter.com/Bitlingo1" target={"_blank"} title={"Twitter"}><img alt={"Twitter"} src={iconTwitter}/></a>
+                                    <a href="https://twitter.com/Bitlingo1" target={"_blank"} rel="noreferrer" title={"Twitter"}><img alt={"Twitter"} src={iconTwitter}/></a>
                                     {/* <a href="https://www.linkedin.com/company/histaff/" target={"_blank"} title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a> */}
-                                    <a href="https://github.com/bitlingo" target={"_blank"} title={"GitHub"}><img alt={"GitHub"} src={iconGitHub}/></a>
+                                    <a href="https://github.com/bitlingo" target={"_blank"} rel="noreferrer" title={"GitHub"}><img alt={"GitHub"} src={iconGitHub}/></a>
                                     {/* <a href="https://www.instagram.com/bitlingo.de/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a> */}
                                 </div>
                             </div>

@@ -25,7 +25,7 @@ const profiles = [{
 
 const Profile = ({name, profilePicture, title, primary, secondary}) => (
     <div className="profile">
-        <img className="profile-picture" src={profilePicture} title="Grischa"></img>
+        <img className="profile-picture" src={profilePicture} title={name} alt={name}></img>
         <div className="texts">
             <span className="text name">{name}</span>
             <span className="text title">{title}</span>
