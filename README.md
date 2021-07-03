@@ -22,6 +22,7 @@
 
    ```sh
    cd bitlingo-website/
+   npm install
    gatsby develop
    ```
 
