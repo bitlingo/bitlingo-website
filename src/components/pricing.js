@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import { Slider } from "antd"
+import React, { useState, useEffect } from "react";
+import { Slider } from "antd";
 
 const sliderProps = {
   defaultListeners: 10,
@@ -8,29 +8,29 @@ const sliderProps = {
   minHours: 0.5,
   maxListeners: 100,
   maxHours: 8,
-}
+};
 
 const handleListenerSliderTooltip = (value) => {
   if (value === 1) {
-    return `${value} Stunde`
+    return `${value} Stunde`;
   } else {
-    return `${value} Stunden`
+    return `${value} Stunden`;
   }
-}
+};
 
 const calculatePrice = (listeners, hours) => {
-  return hours * 300 + listeners * 20
-}
+  return hours * 300 + listeners * 20;
+};
 
 const Pricing = () => {
-  const [listeners, setListeners] = useState(sliderProps.defaultListeners)
-  const [hours, setHours] = useState(sliderProps.defaultHours)
-  const [price, setPrice] = useState(0)
+  const [listeners, setListeners] = useState(sliderProps.defaultListeners);
+  const [hours, setHours] = useState(sliderProps.defaultHours);
+  const [price, setPrice] = useState(0);
 
   useEffect(() => {
-    const price = calculatePrice(listeners, hours)
-    setPrice(price)
-  }, [listeners, hours])
+    const price = calculatePrice(listeners, hours);
+    setPrice(price);
+  }, [listeners, hours]);
 
   return (
     <div className="pricing-container">
@@ -56,7 +56,7 @@ const Pricing = () => {
       </div>
       <span className="price">{`Preis: ${price} €`}</span>
     </div>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;

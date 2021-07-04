@@ -1,13 +1,13 @@
-import warumBitoin from "../../static/images/presentations/warum-bitcoin.jpg"
-import buyBitcoin from "../../static/images/presentations/buy-bitcoin.jpg"
-import sendBitcoin from "../../static/images/presentations/send-bitcoin.jpg"
-import storeBitcoin from "../../static/images/presentations/store-bitcoin.jpg"
-import ledgerBitcoin from "../../static/images/presentations/ledger-bitcoin.jpg"
-import portfolioBitcoin from "../../static/images/presentations/portfolio-bitcoin.jpg"
-import miningBitcoin from "../../static/images/presentations/mining-bitcoin.jpg"
-import lightning from "../../static/images/presentations/lightning.jpg"
-import umweltBitcoin from "../../static/images/presentations/umwelt-bitcoin.jpg"
-import ethereum from "../../static/images/presentations/ethereum.jpg"
+import warumBitoin from "../../static/images/presentations/warum-bitcoin.jpg";
+import buyBitcoin from "../../static/images/presentations/buy-bitcoin.jpg";
+import sendBitcoin from "../../static/images/presentations/send-bitcoin.jpg";
+import storeBitcoin from "../../static/images/presentations/store-bitcoin.jpg";
+import ledgerBitcoin from "../../static/images/presentations/ledger-bitcoin.jpg";
+import portfolioBitcoin from "../../static/images/presentations/portfolio-bitcoin.jpg";
+import miningBitcoin from "../../static/images/presentations/mining-bitcoin.jpg";
+import lightning from "../../static/images/presentations/lightning.jpg";
+import umweltBitcoin from "../../static/images/presentations/umwelt-bitcoin.jpg";
+import ethereum from "../../static/images/presentations/ethereum.jpg";
 
 const presentationData = [
   {
@@ -61,6 +61,6 @@ const presentationData = [
     text: "Ethereum ist mit Abstand die zweitgrößte Kryptowährung hinter Bitcoin. Was sind Smart Contracts und welchen Nutzen haben sie in der realen Welt? Was hat es mit dem groß angekündigten Update auf Ethereum 2.0 auf sich und was ändert sich durch den Übergang zu Proof-of-Stake?",
     picture: ethereum,
   },
-]
+];
 
-export default presentationData
+export default presentationData;

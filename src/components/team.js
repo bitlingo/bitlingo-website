@@ -1,7 +1,7 @@
-import React from "react"
-import grischa from "../../static/images/team/grischa.jpg"
-import cenan from "../../static/images/team/cenan.jpg"
-import laurin from "../../static/images/team/laurin.jpg"
+import React from "react";
+import grischa from "../../static/images/team/grischa.jpg";
+import cenan from "../../static/images/team/cenan.jpg";
+import laurin from "../../static/images/team/laurin.jpg";
 
 const profiles = [
   {
@@ -25,7 +25,7 @@ const profiles = [
     textPrimary: "Architektur und Städtebau B.Sc.",
     textSecondary: "seit 2017 im Kryptomarkt",
   },
-]
+];
 
 const Profile = ({ name, profilePicture, title, primary, secondary }) => (
   <div className="profile">
@@ -42,7 +42,7 @@ const Profile = ({ name, profilePicture, title, primary, secondary }) => (
       <span className="text secondary">{secondary}</span>
     </div>
   </div>
-)
+);
 
 const Description = () => (
   <div>
@@ -80,7 +80,7 @@ const Description = () => (
       dem Bereich anbietet.
     </span>
   </div>
-)
+);
 
 const Team = () => (
   <div className="team">
@@ -98,6 +98,6 @@ const Team = () => (
     </div>
     <Description />
   </div>
-)
+);
 
-export default Team
+export default Team;

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const PresentationPictureLeft = ({ title, text, picture }) => (
   <div className={"presentation__item"}>
@@ -19,7 +19,7 @@ const PresentationPictureLeft = ({ title, text, picture }) => (
       </div>
     </div>
   </div>
-)
+);
 
 const PresentationPictureRight = ({ title, text, picture }) => (
   <div className={"presentation__item"}>
@@ -40,14 +40,14 @@ const PresentationPictureRight = ({ title, text, picture }) => (
       </div>
     </div>
   </div>
-)
+);
 
 const Presentation = ({ index, title, text, picture }) => {
   return index % 2 === 0 ? (
     <PresentationPictureLeft title={title} text={text} picture={picture} />
   ) : (
     <PresentationPictureRight title={title} text={text} picture={picture} />
-  )
-}
+  );
+};
 
-export default Presentation
+export default Presentation;

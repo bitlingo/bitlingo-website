@@ -1,5 +1,5 @@
-import React from "react"
-import Presentation from "./presentation"
+import React from "react";
+import Presentation from "./presentation";
 
 const Presentations = ({ data }) => (
   <div>
@@ -16,6 +16,6 @@ const Presentations = ({ data }) => (
       />
     ))}
   </div>
-)
+);
 
-export default Presentations
+export default Presentations;

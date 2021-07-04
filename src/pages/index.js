@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Team from "../components/team"
-import Pricing from "../components/pricing"
-import featureImage from "../../static/images/vortrag.jpg"
-import presentationData from "../data/presentationData"
-import Presentations from "../components/presentations"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import Team from "../components/team";
+import Pricing from "../components/pricing";
+import featureImage from "../../static/images/vortrag.jpg";
+import presentationData from "../data/presentationData";
+import Presentations from "../components/presentations";
 
-const presentationDataLandingPage = presentationData.slice(0, 3)
+const presentationDataLandingPage = presentationData.slice(0, 3);
 
 const IndexPage = () => (
   <Layout>
@@ -48,6 +48,6 @@ const IndexPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
