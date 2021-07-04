@@ -232,17 +232,26 @@ body {
     .pricing-container {
       text-align: center;
       margin-bottom: 2rem;
-      
+
       .pricing-sliders {
         display: flex;
         flex-direction: column;
         max-width: auto;
         margin: 2rem 0;
+
+        // antd override
+        .ant-slider-track {
+          background-color: $bitlingo-brand;
+        }
+        .ant-slider-handle {
+          background-color: lighten($bitlingo-brand, 10);
+        }
+        .ant-tooltip-open {
+          border-color: darken($bitlingo-brand, 10);
+        }
       }
       .price {
-        
-          font-size: 36px;
-        
+        font-size: 36px;
       }
     }
 
