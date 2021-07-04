@@ -5,6 +5,10 @@ import Seo from "../components/seo"
 import Team from "../components/team"
 import Pricing from "../components/pricing"
 import featureImage from "../../static/images/vortrag.jpg"
+import presentationData from "../data/presentationData"
+import Presentations from "../components/presentations"
+
+const presentationDataLandingPage = presentationData.slice(0, 3);
 
 const IndexPage = () => (
     <Layout>
@@ -18,6 +22,7 @@ const IndexPage = () => (
 
         <div className={"container"}>
             <div className={"features"}>
+                <Presentations data={presentationDataLandingPage} />
                 <Team />
                 <Pricing />
             </div>

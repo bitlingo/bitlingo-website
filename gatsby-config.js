@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#f2a900`,
         display: `minimal-ui`,
-        icon: `${__dirname}/static/images/histaff.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/static/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
