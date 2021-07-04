@@ -63,4 +63,4 @@ const presentationData = [
   },
 ]
 
-export default presentationData;
+export default presentationData

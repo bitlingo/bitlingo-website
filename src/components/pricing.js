@@ -19,7 +19,7 @@ const handleListenerSliderTooltip = (value) => {
 }
 
 const calculatePrice = (listeners, hours) => {
-    return hours * 300 + listeners * 20;
+  return hours * 300 + listeners * 20
 }
 
 const Pricing = () => {
@@ -27,9 +27,9 @@ const Pricing = () => {
   const [hours, setHours] = useState(sliderProps.defaultHours)
   const [price, setPrice] = useState(0)
 
-  useEffect(()=> {
-      const price = calculatePrice(listeners, hours);
-      setPrice(price);
+  useEffect(() => {
+    const price = calculatePrice(listeners, hours)
+    setPrice(price)
   }, [listeners, hours])
 
   return (
