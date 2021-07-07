@@ -50,7 +50,7 @@ const Layout = ({ children }) => (
                     <h4>Bitlingo</h4>
                     <ul>
                       <li>
-                        <Link to="/about" title={"About Us"}>
+                        <Link to="/about" title={"Über Bitlingo"}>
                           Über uns
                         </Link>
                       </li>
@@ -129,7 +129,6 @@ const Layout = ({ children }) => (
                 <a href="https://bitlingo.de" title={"Bitlingo"}>
                   Bitlingo
                 </a>
-                . All rights reserved.
               </p>
             </div>
           </div>
