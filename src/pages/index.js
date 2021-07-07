@@ -5,6 +5,7 @@ import Seo from "../components/seo";
 import Team from "../components/team";
 import Pricing from "../components/pricing";
 import featureImage from "../../static/images/vortrag.jpg";
+import bitlingoTeamImage from "../../static/images/bitlingo_team.jpg";
 import presentationData from "../data/presentationData";
 import Presentations from "../components/presentations";
 
@@ -19,7 +20,7 @@ const IndexPage = () => (
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
       <img
         alt={"Dashboard"}
-        src={featureImage}
+        src={bitlingoTeamImage}
         style={{ borderRadius: "10px" }}
       />
     </div>

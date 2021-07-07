@@ -4,7 +4,7 @@ import { StaticQuery, graphql, Link } from "gatsby";
 
 import Header from "./header";
 import "../../static/styles/main.scss";
-import logo from "../../static/images/logo.png";
+import logo from "../../static/images/logo/logo4.svg";
 import iconTwitter from "../../static/images/icon-twitter.svg";
 import iconGitHub from "../../static/images/icon-github.svg";
 /* import iconLinkedin from "../../static/images/icon-linkedin.svg"
@@ -55,7 +55,9 @@ const Layout = ({ children }) => (
                         </Link>
                       </li>
                       <li>
-                        <a href={"https://bitlingo.de/blog"}>Blog</a>
+                        <Link to="/lectures" title={"Vorträge"}>
+                          Vorträge
+                        </Link>
                       </li>
                       <li>
                         <a
@@ -81,13 +83,13 @@ const Layout = ({ children }) => (
                     <h4>Support</h4>
                     <ul>
                       <li>
-                        <Link to="/contact" title={"Contact Us"}>
-                          Contact
+                        <Link to="/contact" title={"Kontakt"}>
+                          Kontakt
                         </Link>
                       </li>
                       <li>
-                        <Link to="/privacy" title={"Privacy Policy"}>
-                          Privacy
+                        <Link to="/privacy" title={"Datenschutzerklärung"}>
+                          Datenschutzerklärung
                         </Link>
                       </li>
                     </ul>
