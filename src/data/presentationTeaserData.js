@@ -48,7 +48,7 @@ const presentationTeaserData = [
   },
   {
     title: "Lightning-Netzwerk",
-    text: "Das Lightning-Netzwerk ist eine Second-Layer-Technologie, die das Skalierungsproblem einer Blockchain lösen soll. Teilnehmer des Netzwerks können in nahezu Echtzeit eine unbegrenzte Anzahl an Transaktionen ausführen. Wie man das Lightning-Netzwerk nutzen kann erklären wir in diesem Vortrag.",
+    text: "Das Lightning-Netzwerk ist eine Second-Layer-Technologie, die das Skalierungsproblem einer Blockchain lösen soll. Teilnehmer:innen des Netzwerks können in nahezu Echtzeit eine unbegrenzte Anzahl an Transaktionen ausführen. Wie man das Lightning-Netzwerk nutzen kann erklären wir in diesem Vortrag.",
     picture: lightning,
   },
   {
