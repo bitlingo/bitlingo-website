@@ -19,7 +19,7 @@ const handleListenerSliderTooltip = (value) => {
 };
 
 const calculatePrice = (listeners, hours) => {
-  return hours * 300 + listeners * 20;
+  return -1 + 40 * listeners + 300 * hours;
 };
 
 const Pricing = () => {
@@ -41,7 +41,7 @@ const Pricing = () => {
           min={sliderProps.minListeners}
           max={sliderProps.maxListeners}
           tooltipVisible
-          tipFormatter={(value) => `${value} Teilnehmer`}
+          tipFormatter={(value) => `${value} Teilnehmer:innen`}
           onChange={setListeners}
         ></Slider>
         <Slider
