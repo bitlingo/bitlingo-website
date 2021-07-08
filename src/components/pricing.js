@@ -3,9 +3,9 @@ import { Slider } from "antd";
 
 const sliderProps = {
   defaultListeners: 10,
-  defaultHours: 1,
+  defaultHours: 2,
   minListeners: 1,
-  minHours: 0.5,
+  minHours: 1,
   maxListeners: 100,
   maxHours: 8,
 };
@@ -54,7 +54,7 @@ const Pricing = () => {
           onChange={setHours}
         ></Slider>
       </div>
-      <span className="price">{`Preis: ${price} €`}</span>
+      <span className="price">{`Preis: ${price} € inkl. MwSt.`}</span>
     </div>
   );
 };
