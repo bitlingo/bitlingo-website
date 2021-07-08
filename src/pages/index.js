@@ -19,8 +19,8 @@ const IndexPage = () => (
       <h1>Bitlingo GbR</h1>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
       <img
-        alt={"Dashboard"}
-        src={bitlingoTeamImage}
+        alt={"Team Foto"}
+        src={featureImage}
         style={{ borderRadius: "10px" }}
       />
     </div>
