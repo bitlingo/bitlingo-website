@@ -32,7 +32,7 @@ body {
 
     &:hover,
     &:active {
-      color: $bitlingo-brand;
+      color: white;
     }
   }
 
@@ -255,8 +255,8 @@ body {
       .pricing-sliders {
         display: flex;
         flex-direction: column;
-        max-width: auto;
-        margin: 2rem 0;
+        max-width: 50%;
+        margin: 2rem auto;
 
         // antd override
         .ant-slider-track {

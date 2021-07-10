@@ -55,6 +55,7 @@ const Pricing = () => {
         ></Slider>
       </div>
       <span className="price">{`Preis: ${price} € inkl. MwSt.`}</span>
+      <a href="mailto:info@bitlingo.de" className="button">Vortrag Anfragen</a>
     </div>
   );
 };
