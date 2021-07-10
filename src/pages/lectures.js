@@ -10,7 +10,7 @@ const Lectures = () => (
     <Seo title="Vorträge" />
     <div className={"container"}>
       <div className={"features"}>
-        <Presentations data={presentationData} />
+        <Presentations data={presentationData} showHr={true} />
       </div>
     </div>
   </Layout>

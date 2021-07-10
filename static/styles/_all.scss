@@ -31,7 +31,10 @@ body {
     color: $bitlingo-brand;
     border: 2px solid;
     border-radius: 10%;
-    margin: 2rem 0;
+    margin: 4rem 0;
+    @media screen and (max-width: $break-small) {
+      margin: 2rem 0;
+    }
   }
 
   a {
@@ -39,17 +42,7 @@ body {
 
     &:hover,
     &:active {
-      color: white;
-    }
-  }
-
-  .presentations {
-    h2 {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: #1e1c21;
-      text-align: center;
+      color: darken($bitlingo-brand, 5);
     }
   }
 
@@ -166,7 +159,7 @@ body {
 
   .page-header {
     text-align: center;
-    padding: 50px 0 100px 0;
+    padding: 0px 0 100px 0;
     background-color: #fdfaff;
     border-radius: 0px 0px 40px 40px;
 
@@ -217,16 +210,33 @@ body {
       }
     }
   }
+  .presentations {
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 3rem 0;
+      color: #1e1c21;
+      text-align: center;
+    }
+  }
 
   .presentation__item {
-    padding: 50px 0;
-
     .row {
       display: flex;
       flex-wrap: wrap;
 
       .col-6 {
         align-self: center;
+      }
+
+      @media screen and (max-width: $break-small) {
+        .col-6.first {
+          order: 1;
+        }
+  
+        .col-6 {
+          order: 2;
+        }
       }
     }
 

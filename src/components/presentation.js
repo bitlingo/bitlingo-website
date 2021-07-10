@@ -24,7 +24,7 @@ const PresentationPictureLeft = ({ title, text, picture }) => (
 const PresentationPictureRight = ({ title, text, picture }) => (
   <div className={"presentation__item picture_right"}>
     <div className={"row"}>
-      <div className={"col-6 first"}>
+      <div className={"col-6"}>
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
@@ -33,7 +33,7 @@ const PresentationPictureRight = ({ title, text, picture }) => (
           </a>
         </div>
       </div>
-      <div className={"col-6"}>
+      <div className={"col-6 first"}>
         <div className={"thumbnail"}>
           <img alt={"Bild folgt"} src={picture} />
         </div>
