@@ -45,6 +45,7 @@ const Pricing = () => {
       <h2>Preise</h2>
       <div className="pricing-sliders">
         <Slider
+          className="slider"
           defaultValue={sliderProps.defaultListeners}
           min={sliderProps.minListeners}
           max={sliderProps.maxListeners}
@@ -53,6 +54,7 @@ const Pricing = () => {
           onChange={setListeners}
         ></Slider>
         <Slider
+          className="slider"
           defaultValue={sliderProps.defaultHours}
           min={sliderProps.minHours}
           max={sliderProps.maxHours}
@@ -62,7 +64,7 @@ const Pricing = () => {
           onChange={setHours}
         ></Slider>
       </div>
-      <span className="price">{`Preis: ${price} € (inkl. MwSt.)`}</span>
+      <span className="price">{`${price} € (inkl. MwSt.)`}</span>
       <a href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer`} className="button">Vortrag anfragen</a>
     </div>
   );

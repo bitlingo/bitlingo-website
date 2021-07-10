@@ -27,6 +27,13 @@ body {
     line-height: 54px;
   }
 
+  hr {
+    color: $bitlingo-brand;
+    border: 2px solid;
+    border-radius: 10%;
+    margin: 2rem 0;
+  }
+
   a {
     color: $bitlingo-brand;
 
@@ -47,17 +54,17 @@ body {
   }
 
   .button {
-      width: 210px;
-      height: 47px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 47px;
-      display: block;
-      background: $bitlingo-brand;
-      border-radius: 4px;
-      text-align: center;
-      color: #ffffff;
+    width: 210px;
+    height: 47px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 47px;
+    display: block;
+    background: $bitlingo-brand;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
   }
 
   .team {
@@ -159,7 +166,7 @@ body {
 
   .page-header {
     text-align: center;
-    padding: 100px 0 100px 0;
+    padding: 50px 0 100px 0;
     background-color: #fdfaff;
     border-radius: 0px 0px 40px 40px;
 
@@ -211,75 +218,78 @@ body {
     }
   }
 
-  .features {
-    .presentation__item {
-      padding: 50px 0;
+  .presentation__item {
+    padding: 50px 0;
 
-      .row {
-        display: flex;
-        flex-wrap: wrap;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
 
-        .col-6 {
-          align-self: center;
-        }
-      }
-
-      .presentation__content {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-
-        h3 {
-          font-size: 24px;
-          font-weight: bold;
-          margin-bottom: 12px;
-          color: #1e1c21;
-          line-height: 2rem;
-        }
-
-        p {
-          font-size: 18px;
-          line-height: 26px;
-        }
-      }
-
-      .thumbnail {
-        img {
-          max-width: 100%;
-        }
+      .col-6 {
+        align-self: center;
       }
     }
 
-    .button {
+    .presentation__content {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: #1e1c21;
+        line-height: 2rem;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+
+    .thumbnail {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .button {
+    margin: 2rem auto;
+  }
+
+  .pricing-container {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .pricing-sliders {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
       margin: 2rem auto;
-    }
 
-    .pricing-container {
-      text-align: center;
-      margin-bottom: 2rem;
-
-      .pricing-sliders {
-        display: flex;
-        flex-direction: column;
-        max-width: 50%;
-        margin: 2rem auto;
-
-        // antd override
-        .ant-slider-track {
-          background-color: $bitlingo-brand;
-        }
-        .ant-slider-handle {
-          background-color: lighten($bitlingo-brand, 10);
-        }
-        .ant-tooltip-open {
-          border-color: darken($bitlingo-brand, 10);
-        }
+      .slider {
+        margin: 2rem 0;
       }
-      .price {
-        font-size: 36px;
+      // antd override
+      .ant-slider-track {
+        background-color: $bitlingo-brand;
+      }
+      .ant-slider-handle {
+        background-color: lighten($bitlingo-brand, 10);
+      }
+      .ant-tooltip-open {
+        border-color: darken($bitlingo-brand, 10);
       }
     }
+    .price {
+      font-size: 36px;
+    }
+  }
 
+  .features {
     @media screen and (max-width: $break-small) {
       .col-6.first {
         order: 1;
@@ -380,75 +390,6 @@ body {
     }
   }
 
-  .targets {
-    margin: 120px 0 0;
-
-    .title {
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 99px;
-      color: #1e1c21;
-    }
-
-    .item {
-      margin: 0 0 60px 0;
-
-      h3 {
-        font-size: 18px;
-        margin: 5px 0 0;
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 26px;
-      }
-    }
-  }
-
-  .bg-color {
-    background-color: #fdfaff;
-    padding: 52px 0;
-  }
-
-  .integration-guid {
-    width: 80%;
-    margin: 0 auto;
-    color: #1e1c21;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: Inter;
-    }
-
-    .title {
-      text-align: center;
-
-      h2 {
-        font-size: 36px;
-      }
-    }
-
-    .content {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  }
-
   footer {
     padding: 120px 0 45px;
 
@@ -494,17 +435,6 @@ body {
                 color: $bitlingo-brand;
               }
             }
-          }
-        }
-
-        .links__special {
-          background-color: $bitlingo-brand;
-          color: #ffffff;
-          border-radius: 4px;
-          padding: 2px 5px;
-
-          &:hover {
-            color: #ffffff;
           }
         }
       }

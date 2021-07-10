@@ -27,11 +27,14 @@ const IndexPage = () => (
 
     <div className={"container"}>
       <div className={"features"}>
+        <hr />
         <Presentations data={presentationDataLandingPage} />
         <Link to="/lectures">
           <div className={"button"}>Weitere Vorträge</div>
         </Link>
+        <hr />
         <Team />
+        <hr />
         <Pricing />
       </div>
     </div>

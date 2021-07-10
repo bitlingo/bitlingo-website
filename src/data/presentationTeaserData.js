@@ -17,7 +17,7 @@ const presentationTeaserData = [
     picture: genesis,
   },
   {
-    title: "Warum Kryptowährungen kaufen?",
+    title: "Ist es sinnvoll Kryptowährungen zu kaufen?",
     text: "Kryptowährungen sind in aller Munde. Lohnt es sich jetzt noch einzusteigen oder ist das alles nur ein großer Hype, der wieder verschwindet? Warum ist es sinnvoll sich mit Bitcoin und Co. zu befassen und welches Problem wird gelöst?",
     picture: warumBitoin,
   },

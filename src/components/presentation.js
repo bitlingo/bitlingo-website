@@ -1,7 +1,7 @@
 import React from "react";
 
 const PresentationPictureLeft = ({ title, text, picture }) => (
-  <div className={"presentation__item"}>
+  <div className={"presentation__item picture-left"}>
     <div className={"row"}>
       <div className={"col-6 first"}>
         <div className={"thumbnail"}>
@@ -22,7 +22,7 @@ const PresentationPictureLeft = ({ title, text, picture }) => (
 );
 
 const PresentationPictureRight = ({ title, text, picture }) => (
-  <div className={"presentation__item"}>
+  <div className={"presentation__item picture_right"}>
     <div className={"row"}>
       <div className={"col-6 first"}>
         <div className={"presentation__content"}>
