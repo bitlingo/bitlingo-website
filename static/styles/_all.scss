@@ -46,6 +46,20 @@ body {
     }
   }
 
+  .button {
+      width: 210px;
+      height: 47px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 47px;
+      display: block;
+      background: $bitlingo-brand;
+      border-radius: 4px;
+      text-align: center;
+      color: #ffffff;
+  }
+
   .team {
     margin-bottom: 2rem;
     h2 {
@@ -227,6 +241,11 @@ body {
           max-width: 100%;
         }
       }
+    }
+
+    .button {
+      margin: 0 auto;
+      margin-bottom: 2rem;
     }
 
     .pricing-container {

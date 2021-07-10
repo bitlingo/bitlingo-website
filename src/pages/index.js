@@ -1,15 +1,15 @@
 import React from "react";
-
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Team from "../components/team";
 import Pricing from "../components/pricing";
 import featureImage from "../../static/images/vortrag.jpg";
 import bitlingoTeamImage from "../../static/images/bitlingo_team.jpg";
-import presentationData from "../data/presentationData";
+import presentationTeaserData from "../data/presentationTeaserData";
 import Presentations from "../components/presentations";
 
-const presentationDataLandingPage = presentationData.slice(0, 3);
+const presentationDataLandingPage = presentationTeaserData.slice(0, 3);
 
 const IndexPage = () => (
   <Layout>
@@ -28,6 +28,9 @@ const IndexPage = () => (
     <div className={"container"}>
       <div className={"features"}>
         <Presentations data={presentationDataLandingPage} />
+        <Link to="/lectures">
+          <div className={"button"}>Weitere Vorträge</div>
+        </Link>
         <Team />
         <Pricing />
       </div>

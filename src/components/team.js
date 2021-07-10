@@ -83,7 +83,7 @@ const Description = () => (
 );
 
 const Team = () => (
-  <div className="team">
+  <div id="team" className="team">
     <h2>Bitlingo Team</h2>
     <div className="members">
       {profiles.map((profile) => (

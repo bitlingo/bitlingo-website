@@ -5,7 +5,7 @@ const PresentationPictureLeft = ({ title, text, picture }) => (
     <div className={"row"}>
       <div className={"col-6 first"}>
         <div className={"thumbnail"}>
-          <img alt={"Presentation preview"} src={picture} />
+          <img alt={"Bild folgt"} src={picture} />
         </div>
       </div>
       <div className={"col-6"}>
@@ -35,7 +35,7 @@ const PresentationPictureRight = ({ title, text, picture }) => (
       </div>
       <div className={"col-6"}>
         <div className={"thumbnail"}>
-          <img alt={"Presentation preview"} src={picture} />
+          <img alt={"Bild folgt"} src={picture} />
         </div>
       </div>
     </div>

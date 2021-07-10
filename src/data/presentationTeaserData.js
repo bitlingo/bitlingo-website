@@ -11,6 +11,11 @@ import ethereum from "../../static/images/presentations/ethereum.jpg";
 
 const presentationTeaserData = [
   {
+    title: "Genesis-Vortrag Kryptowährungen 60 min",
+    text: "Neueinsteigern empfehlen wir unseren Einführungsvortrag, in dem wir auf die Grundlagen der Blockchain-Technologie eingehen. Wie ist Bitcoin entstanden? Was macht Bitcoin so besonders und was hat es mit Bitcoin-Mining und dem Proof of Work Konsens-Algorithmus auf sich? Der Vortrag hat eine Dauer von 45 min mit anschließender Fragerunde.",
+    picture: null,
+  },
+  {
     title: "Kryptowährungen Foundation Level",
     text: "Kryptowährungen sind in aller Munde. Lohnt es sich jetzt noch einzusteigen oder ist das alles nur ein großer Hype, der wieder verschwindet? Warum ist es sinnvoll sich mit Bitcoin und Co. zu befassen und welches Problem wird gelöst?",
     picture: warumBitoin,

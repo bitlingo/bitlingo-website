@@ -50,7 +50,7 @@ const Layout = ({ children }) => (
                     <h4>Bitlingo</h4>
                     <ul>
                       <li>
-                        <Link to="/about" title={"Über Bitlingo"}>
+                        <Link to="/#team" title={"Über Bitlingo"}>
                           Über uns
                         </Link>
                       </li>
