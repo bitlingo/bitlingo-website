@@ -16,7 +16,7 @@ const presentationTeaserData = [
     picture: null,
   },
   {
-    title: "Kryptowährungen Foundation Level",
+    title: "Warum Kryptowährungen kaufen?",
     text: "Kryptowährungen sind in aller Munde. Lohnt es sich jetzt noch einzusteigen oder ist das alles nur ein großer Hype, der wieder verschwindet? Warum ist es sinnvoll sich mit Bitcoin und Co. zu befassen und welches Problem wird gelöst?",
     picture: warumBitoin,
   },

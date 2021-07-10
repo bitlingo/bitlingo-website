@@ -54,8 +54,8 @@ const Pricing = () => {
           onChange={setHours}
         ></Slider>
       </div>
-      <span className="price">{`Preis: ${price} € inkl. MwSt.`}</span>
-      <a href="mailto:info@bitlingo.de" className="button">Vortrag Anfragen</a>
+      <span className="price">{`Preis: ${price} € (inkl. MwSt.)`}</span>
+      <a href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer`} className="button">Vortrag Anfragen</a>
     </div>
   );
 };

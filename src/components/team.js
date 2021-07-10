@@ -88,6 +88,7 @@ const Team = () => (
     <div className="members">
       {profiles.map((profile) => (
         <Profile
+          key={profile.name}
           name={profile.name}
           profilePicture={profile.profilePicture}
           title={profile.title}
