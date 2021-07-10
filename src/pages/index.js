@@ -47,7 +47,7 @@ const IndexPage = () => (
         </div>
 
         <div className={"button"}>
-          <a href="mailto:info@bitlingo.de">Ich möchte Lernen!</a>
+          <a href="mailto:info@bitlingo.de">Ich möchte lernen!</a>
         </div>
       </div>
     </div>

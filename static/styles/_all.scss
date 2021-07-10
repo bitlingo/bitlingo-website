@@ -81,7 +81,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 300px;
-        margin: 2rem 0;
+        margin: 2rem auto;
 
         .profile-picture {
           border-radius: 50%;
@@ -147,6 +147,12 @@ body {
           border-radius: 4px;
           text-align: center;
           color: #ffffff;
+        }
+      }
+
+      @media screen and (max-width: $break-small) {
+        .get-started {
+          display: hidden;
         }
       }
     }
