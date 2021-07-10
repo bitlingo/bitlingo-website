@@ -10,7 +10,7 @@ const sliderProps = {
   maxHours: 8,
 };
 
-const handleHoursSliderTooltip = (value) => {
+const handleListenerSliderTooltip = (value) => {
   if (value === 1) {
     return `${value} Teilnehmer:in`
   } else {
@@ -18,7 +18,7 @@ const handleHoursSliderTooltip = (value) => {
   }
 };
 
-const handleListenerSliderTooltip = (value) => {
+const handleHoursSliderTooltip = (value) => {
   if (value === 1) {
     return `${value} Stunde`;
   } else {
