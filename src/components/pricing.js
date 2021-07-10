@@ -10,6 +10,14 @@ const sliderProps = {
   maxHours: 8,
 };
 
+const handleHoursSliderTooltip = (value) => {
+  if (value === 1) {
+    return `${value} Teilnehmer:in`
+  } else {
+    return `${value} Teilnehmer:innen`
+  }
+};
+
 const handleListenerSliderTooltip = (value) => {
   if (value === 1) {
     return `${value} Stunde`;
@@ -41,7 +49,7 @@ const Pricing = () => {
           min={sliderProps.minListeners}
           max={sliderProps.maxListeners}
           tooltipVisible
-          tipFormatter={(value) => `${value} Teilnehmer:innen`}
+          tipFormatter={handleListenerSliderTooltip}
           onChange={setListeners}
         ></Slider>
         <Slider
@@ -50,7 +58,7 @@ const Pricing = () => {
           max={sliderProps.maxHours}
           step={0.5}
           tooltipVisible
-          tipFormatter={handleListenerSliderTooltip}
+          tipFormatter={handleHoursSliderTooltip}
           onChange={setHours}
         ></Slider>
       </div>

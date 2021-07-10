@@ -101,7 +101,7 @@ const Layout = ({ children }) => (
                 <div className={"widget__item"}>
                   <div className={"social"}>
                     <a
-                      href="https://twitter.com/Bitlingo1"
+                      href="https://twitter.com/Bitlingo_GbR"
                       target={"_blank"}
                       rel="noreferrer"
                       title={"Twitter"}

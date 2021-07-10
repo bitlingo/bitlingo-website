@@ -1,19 +1,20 @@
-import warumBitoin from "../../static/images/presentations/warum-bitcoin.jpg";
-import buyBitcoin from "../../static/images/presentations/buy-bitcoin.jpg";
-import sendBitcoin from "../../static/images/presentations/send-bitcoin.jpg";
-import storeBitcoin from "../../static/images/presentations/store-bitcoin.jpg";
-import ledgerBitcoin from "../../static/images/presentations/ledger-bitcoin.jpg";
-import portfolioBitcoin from "../../static/images/presentations/portfolio-bitcoin.jpg";
-import miningBitcoin from "../../static/images/presentations/mining-bitcoin.jpg";
-import lightning from "../../static/images/presentations/lightning.jpg";
-import umweltBitcoin from "../../static/images/presentations/umwelt-bitcoin.jpg";
-import ethereum from "../../static/images/presentations/ethereum.jpg";
+import buyBitcoin from "../../static/images/presentations/Buy-Bitcoin.jpg";
+import ethereum from "../../static/images/presentations/Ethereum.jpg";
+import genesis from "../../static/images/presentations/Genesis.jpg"
+import ledgerBitcoin from "../../static/images/presentations/Ledger-Bitcoin.jpg";
+import lightning from "../../static/images/presentations/Lightning.jpg";
+import miningBitcoin from "../../static/images/presentations/Mining-Bitcoin.jpg";
+import portfolioBitcoin from "../../static/images/presentations/Portfolio-Bitcoin.jpg";
+import sendBitcoin from "../../static/images/presentations/Send-Bitcoin.jpg";
+import storeBitcoin from "../../static/images/presentations/Aufbewahrung-Bitcoin.jpg";
+import umweltBitcoin from "../../static/images/presentations/Umwelt-Bitcoin.jpg";
+import warumBitoin from "../../static/images/presentations/Warum-Bitcoin.jpg";
 
 const presentationData = [
   {
     title: "Genesis-Vortrag Kryptowährungen 60 min",
     text: "Neueinsteigern empfehlen wir unseren Einführungsvortrag, in dem wir auf die Grundlagen der Blockchain-Technologie eingehen. Wie ist Bitcoin entstanden? Was macht Bitcoin so besonders und was hat es mit Bitcoin-Mining und dem Proof of Work Konsens-Algorithmus auf sich? Der Vortrag (inkl. anschließender Fragerunde) hat eine Gesamtdauer von 60 Minuten.",
-    picture: null,
+    picture: genesis,
   },
   {
     title: "Warum Kryptowährungen kaufen?",
