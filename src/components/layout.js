@@ -60,17 +60,7 @@ const Layout = ({ children }) => (
                         </Link>
                       </li>
                       <li>
-                        <a
-                          className={"links__special"}
-                          href={"https://feedback.bitlingo.de/"}
-                          target={"_blank"}
-                          rel="noreferrer"
-                          title={
-                            "We look forward to receiving your great feedback"
-                          }
-                        >
-                          Feedback
-                        </a>
+                        <Link to="/impressum">Impressum</Link>
                       </li>
                     </ul>
                   </ul>
@@ -83,9 +73,9 @@ const Layout = ({ children }) => (
                     <h4>Support</h4>
                     <ul>
                       <li>
-                        <Link to="/contact" title={"Kontakt"}>
+                        <a href="mailto:info@bitlingo.de">
                           Kontakt
-                        </Link>
+                        </a>
                       </li>
                       <li>
                         <Link to="/privacy" title={"Datenschutzerklärung"}>
