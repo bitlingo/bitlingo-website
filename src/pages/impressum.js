@@ -14,6 +14,8 @@ Cenan Kurt<br />
 Laurin Harter<br />
 Grischa Daum</p>
 
+<p>Umsatzsteuer-Identifikationsnummer: 07064/01151</p>
+
 <h3>Kontakt</h3>
 <p>Telefon: 017634636552<br />
 E-Mail: info@bitlingo.de</p>
