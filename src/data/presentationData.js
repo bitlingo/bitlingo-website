@@ -14,12 +14,12 @@ import moneroLogo from "../../static/images/presentations/Monero-Logo.png";
 const presentationData = [
   {
     title: "Genesis-Vortrag Kryptowährungen",
-    text: "Neueinsteigern empfehlen wir unseren Einführungsvortrag, in dem wir auf die Grundlagen der Blockchain-Technologie eingehen. Wie ist Bitcoin entstanden? Was macht Bitcoin so besonders und was hat es mit Bitcoin-Mining und dem Proof of Work Konsens-Algorithmus auf sich? Der Vortrag (inkl. anschließender Fragerunde) hat eine Gesamtdauer von 60 Minuten.",
+    text: "Neueinsteiger:innen empfehlen wir unseren Einführungsvortrag, in dem wir auf die Grundlagen der Blockchain-Technologie eingehen. Wie ist Bitcoin entstanden? Was macht Bitcoin so besonders und was hat es mit Bitcoin-Mining und dem Proof of Work Konsens-Algorithmus auf sich? Der Vortrag (inkl. anschließender Fragerunde) hat eine Gesamtdauer von 60 Minuten.",
     picture: genesis,
     learningContent: [
       "Grundlagen der Blockchain-Technologie",
       "Was ist Dezentralisierung?",
-      "Den Wert von Bitcoin verstehen",
+      "Den Wert hinter Bitcoin verstehen",
       "Vergleich zwischen dem traditionellen Geldsystem und Kryptowährungen",
       "Bitcoin Mining und Proof of Work",
     ],
@@ -27,20 +27,20 @@ const presentationData = [
   },
   {
     title: "Was macht Kryptowährungen so wertvoll?",
-    text: "Kryptowährungen rund um Bitcoin haben sich in den letzten Jahren zu einer neuen Anlageklasse und einem alternativen Geldsystem entwickelt. Lohnt es sich jetzt noch einzusteigen oder ist das nur ein großer Hype, der schnell wieder verschwindet? Warum ist es sinnvoll sich mit Bitcoin und Co. zu befassen, welches Potential steckt dahinter und welche Probleme werden gelöst?",
+    text: "Kryptowährungen rund um Bitcoin haben sich in den letzten Jahren zu einer attraktiven neuen Anlageklasse und einem alternativen Geldsystem entwickelt. Lohnt es sich jetzt noch einzusteigen oder ist vielleicht alles nur ein großer Hype, der schnell wieder verschwindet? Warum ist es sinnvoll sich mit Bitcoin und Co. zu befassen, welches Potential steckt dahinter und welche Probleme werden gelöst?",
     picture: warumBitcoin,
     learningContent: [
       "Die aktuelle Geldpolitik",
       "Finanzkrise 2008 und deren Folgen",
       "Vergleich mit dem traditionellen Fiatgeldsystem",
-      "Der Wert von Kryptowährungen",
+      "Den Wert hinter Kryptowährungen verstehen",
       "Was sind die Nachteile und welche Gefahren und Risiken sind zu erwarten?",
     ],
     level: 0,
   },
   {
     title: "Kryptowährungen kaufen - Eine Schritt-für-Schritt-Anleitung",
-    text: "Mittlerweile gibt es sehr viele verschiedene Möglichkeiten Kryptowährungen zu kaufen. Dabei gibt es einiges zu beachten und große Preisunterschiede. Wir beschäftigen uns mit dem Thema welcher Anbieter vertrauenswürdig ist und gleichzeitig niedrige Gebühren bietet.",
+    text: "Heutzutage gibt es sehr viele verschiedene Möglichkeiten Kryptowährungen zu kaufen. Sei es anonym, außerbörslich oder über eine zentralisierte Exchange. Es gibt einiges zu beachten und große Preisunterschiede zwischen den verschiedenen Alternativen. Wir beschäftigen uns mit dem Thema welcher Anbieter vertrauenswürdig ist und gleichzeitig niedrige Gebühren bietet und stellen unsere favorisierte Lösung vor.",
     picture: buyBitcoin,
     learningContent: [
       "Vergleich der verschiedenen Krypto-Börsen",
@@ -52,7 +52,7 @@ const presentationData = [
   },
   {
     title: "Kryptowährungen versenden - Eine Schritt-für-Schritt-Anleitung",
-    text: "Die gekauften Kryptowährungen bei der jeweiligen Handelsplattform liegen zu lassen birgt viele Risiken. Warum es sinnvoll ist die Coins auf eine eigene Wallet zu versenden und was es eigentlich mit dem privaten und öffentlichen Schlüssel auf sich hat klären wir in diesem Vortrag.",
+    text: "Die gekauften Kryptowährungen bei der jeweiligen Handelsplattform liegen zu lassen birgt viele Risiken. Warum ist es sinnvoll die Coins auf eine eigene Wallet zu versenden und was hat es eigentlich mit dem privaten und öffentlichen Schlüssel auf sich? Wir geben in diesem Vortrag eine Schritt-für-Schritt-Anleitung für die Durchführung einer sicheren Transaktion.",
     picture: sendBitcoin,
     learningContent: [
       "Risiken auf einer Handelsplattform",
@@ -64,7 +64,7 @@ const presentationData = [
   },
   {
     title: "Die sichere Aufbewahrung von Kryptowährungen",
-    text: "Einer der wichtigsten Grundsätze in der Welt der Kryptowährungen lautet: “Not your key, not your coins”. Das bedeutet man besitzt nur die Kontrolle über seine Coins, wenn man den privaten Schlüssel zu der Wallet hat, auf der die Coins liegen. Was gilt es zu beachten und welche Art der Aufbewahrung ist die Sicherste?",
+    text: "Einer der wichtigsten Grundsätze in der Welt der Kryptowährungen lautet: “Not your keys, not your coins”. Man kann also nur die volle Kontrolle über seine eigenen Coins haben, wenn man den privaten Schlüssel zu der Wallet besitzt, auf der die Coins liegen. Was gilt es zu beachten und welche Art der Aufbewahrung ist die Sicherste?",
     picture: storeBitcoin,
     learningContent: [
       "Grundlagen zur Public- und Private-Key-Kryptographie",
@@ -76,8 +76,8 @@ const presentationData = [
   },
   {
     title:
-      "Hardware wallets: Wie schütze ich meine Kryptowährungen vor Diebstahl?",
-    text: "Bei der sicheren Aufbewahrung von Kryptowährungen trifft man schnell auf sogenannte Hardware wallets. Wir erklären Schritt für Schritt den richtigen Umgang mit einer solchen Wallet, vom Kauf bis zur Einrichtung und dem Versenden von Coins.",
+      "Hardware Wallets: Wie schütze ich meine Kryptowährungen vor Diebstahl?",
+    text: "Bei der sicheren Aufbewahrung von Kryptowährungen trifft man schnell auf sogenannte Hardware Wallets. Wir erklären Schritt für Schritt den richtigen Umgang mit einer solchen Wallet: Vom Kauf bis zur Einrichtung und dem Versenden von Coins.",
     picture: ledgerBitcoin,
     learningContent: [
       "Was macht eine Hardware wallet so sicher?",
@@ -101,7 +101,7 @@ const presentationData = [
   },
   {
     title: "Lightning-Netzwerk",
-    text: "Das Lightning-Netzwerk ist eine Second-Layer-Technologie, die das Skalierungsproblem einer Blockchain lösen soll. Teilnehmer:innen des Netzwerks können in nahezu Echtzeit eine unbegrenzte Anzahl an Transaktionen ausführen. Wie man das Lightning-Netzwerk nutzen kann erklären wir in diesem Vortrag.",
+    text: "Das Lightning-Netzwerk ist eine Second-Layer-Technologie, die das Skalierungsproblem einer Blockchain lösen soll. Teilnehmer:innen des Netzwerks können in nahezu Echtzeit eine unbegrenzte Anzahl an Transaktionen ausführen. Wie man das Lightning-Netzwerk nutzen kann, erklären wir in diesem Vortrag.",
     picture: lightning,
     learningContent: [
       "Die Vor- und Nachteile des Lightning-Netzwerks",
