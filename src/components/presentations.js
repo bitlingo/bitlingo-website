@@ -1,7 +1,7 @@
 import React from "react";
 import Presentation from "./presentation/presentation";
 
-const Presentations = ({ data, showHr }) => (
+const Presentations = ({ data, showHr, showLearningContent }) => (
   <div>
     <div className="presentations">
       <h2>Bitlingo Vorträge</h2>
@@ -12,6 +12,7 @@ const Presentations = ({ data, showHr }) => (
           key={index}
           index={index}
           data={presentation}
+          showLearningContent={showLearningContent}
         />
         {index < data.length - 1 ? (
           <hr

@@ -21,6 +21,7 @@ const PresentationPictureLeft = ({
   picture,
   learningContent,
   level,
+  showLearningContent,
 }) => (
   <div className={"presentation__item picture-left"}>
     <div className={"row"}>
@@ -39,7 +40,7 @@ const PresentationPictureLeft = ({
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
-          {learningContent ? (
+          {showLearningContent && learningContent ? (
             <LearningContent content={learningContent} />
           ) : null}
           <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
@@ -57,6 +58,7 @@ const PresentationPictureRight = ({
   picture,
   learningContent,
   level,
+  showLearningContent,
 }) => (
   <div className={"presentation__item picture_right"}>
     <div className={"row"}>
@@ -64,7 +66,7 @@ const PresentationPictureRight = ({
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
-          {learningContent ? (
+          {showLearningContent && learningContent ? (
             <LearningContent content={learningContent} />
           ) : null}
           <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
@@ -87,7 +89,7 @@ const PresentationPictureRight = ({
   </div>
 );
 
-const Presentation = ({ index, data }) => {
+const Presentation = ({ index, data, showLearningContent }) => {
   return index % 2 === 0 ? (
     <PresentationPictureLeft
       key={index}
@@ -96,6 +98,7 @@ const Presentation = ({ index, data }) => {
       picture={data.picture}
       learningContent={data.learningContent}
       level={data.level}
+      showLearningContent={showLearningContent}
     />
   ) : (
     <PresentationPictureRight
@@ -105,6 +108,7 @@ const Presentation = ({ index, data }) => {
       picture={data.picture}
       learningContent={data.learningContent}
       level={data.level}
+      showLearningContent={showLearningContent}
     />
   );
 };

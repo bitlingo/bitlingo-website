@@ -5,10 +5,10 @@ import Seo from "../components/seo";
 import Team from "../components/team";
 import Pricing from "../components/pricing";
 import cowork from "../../static/images/cowork.jpg";
-import presentationTeaserData from "../data/presentationTeaserData";
+import presentationData from "../data/presentationData";
 import Presentations from "../components/presentations";
 
-const presentationDataLandingPage = presentationTeaserData.slice(0, 3);
+const presentationDataLandingPage = presentationData.slice(0, 3);
 
 const IndexPage = () => (
   <Layout>
@@ -36,7 +36,7 @@ const IndexPage = () => (
     <div className={"container"}>
       <div className={"features"}>
         <hr />
-        <Presentations data={presentationDataLandingPage} showHr={false} />
+        <Presentations data={presentationDataLandingPage} showHr={false} showLearningContent={false} />
         <Link to="/lectures">
           <div className={"button"}>Weitere Vorträge</div>
         </Link>
