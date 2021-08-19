@@ -47,7 +47,7 @@ const Pricing = () => {
       <div className="description">
       <span >
         Die Kosten unserer Vorträge richten sich nach der jeweiligen Anzahl der
-        Teilnehmer und der Dauer des Vortrags. Wir empfehlen Neueinsteigern
+        Teilnehmer:innen und der Dauer des Vortrags. Wir empfehlen Neueinsteigern
         unseren 60-minütigen Einführungsvortrag “Genesis-Vortrag
         Kryptowährungen”, der ein grundlegendes Blockchain-Wissen vermittelt.
       </span>
@@ -76,7 +76,7 @@ const Pricing = () => {
       </div>
       <span className="price">{`${price} € (inkl. MwSt.)`}</span>
       <a
-        href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer`}
+        href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer:innen`}
         className="button"
       >
         Vortrag anfragen
