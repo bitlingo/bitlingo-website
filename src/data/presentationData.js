@@ -13,7 +13,7 @@ import moneroLogo from "../../static/images/presentations/Monero-Logo.png";
 
 const presentationData = [
   {
-    title: "Genesis-Vortrag Kryptowährungen 60 min",
+    title: "Genesis-Vortrag Kryptowährungen",
     text: "Neueinsteigern empfehlen wir unseren Einführungsvortrag, in dem wir auf die Grundlagen der Blockchain-Technologie eingehen. Wie ist Bitcoin entstanden? Was macht Bitcoin so besonders und was hat es mit Bitcoin-Mining und dem Proof of Work Konsens-Algorithmus auf sich? Der Vortrag (inkl. anschließender Fragerunde) hat eine Gesamtdauer von 60 Minuten.",
     picture: genesis,
     learningContent: [

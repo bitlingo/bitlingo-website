@@ -76,6 +76,8 @@ const Description = () => (
       auf sich aufmerksam gemacht. Seine kreative Ader komplettiert unser
       3-köpfiges Gründerteam.
     </span>
+    <br />
+    <br />
     <span>
       Das Thema Kryptowährungen ist in den letzten Jahren immer präsenter
       geworden und dennoch gibt es kaum qualitativ hochwertige
@@ -85,9 +87,8 @@ const Description = () => (
       an.
     </span>
     <br />
-    <br />
     <span>
-      Die Vorträge richten sich vorrangig an Unternehmen und deren Mitarbeiter,
+      Die Vorträge richten sich vorrangig an Unternehmen und deren Mitarbeiter:innen,
       sowie Privatpersonen, die sich für das Thema interessieren und
       weiterbilden möchten. Die Vorträge haben jeweils eine Gesamtdauer von
       60-120 Minuten (inkl. anschließender Fragerunde) und finden über Zoom
