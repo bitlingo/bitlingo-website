@@ -6,8 +6,8 @@ import Seo from "../components/seo";
 const text = `
 <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
 <p>Kurt, Harter, Daum Bitlingo GbR<br />
-Endingerstra&szlig;e, 39A<br />
-79346 Endingen</p>
+Halbmondstraße 2<br />
+79206 Breisach am Rhein</p>
 
 <p><strong>Vertreten durch:</strong><br />
 Cenan Kurt<br />

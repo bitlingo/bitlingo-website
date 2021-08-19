@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Team from "../components/team";
-import Pricing from "../components/pricing";
+import Pricing from "../components/pricing/pricing";
 import cowork from "../../static/images/cowork.jpg";
 import presentationData from "../data/presentationData";
 import Presentations from "../components/presentations";

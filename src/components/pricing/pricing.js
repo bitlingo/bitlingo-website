@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Slider } from "antd";
+import "./pricing.scss";
 
 const sliderProps = {
   defaultListeners: 10,
@@ -12,9 +13,9 @@ const sliderProps = {
 
 const handleListenerSliderTooltip = (value) => {
   if (value === 1) {
-    return `${value} Teilnehmer:in`
+    return `${value} Teilnehmer:in`;
   } else {
-    return `${value} Teilnehmer:innen`
+    return `${value} Teilnehmer:innen`;
   }
 };
 
@@ -43,6 +44,15 @@ const Pricing = () => {
   return (
     <div className="pricing-container">
       <h2>Preise</h2>
+      <div className="description">
+      <span >
+        Die Kosten unserer Vorträge richten sich nach der jeweiligen Anzahl der
+        Teilnehmer und der Dauer des Vortrags. Wir empfehlen Neueinsteigern
+        unseren 60-minütigen Einführungsvortrag “Genesis-Vortrag
+        Kryptowährungen”, der ein grundlegendes Blockchain-Wissen vermittelt.
+      </span>
+      </div>
+      
       <div className="pricing-sliders">
         <Slider
           className="slider"
@@ -65,7 +75,12 @@ const Pricing = () => {
         ></Slider>
       </div>
       <span className="price">{`${price} € (inkl. MwSt.)`}</span>
-      <a href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer`} className="button">Vortrag anfragen</a>
+      <a
+        href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer`}
+        className="button"
+      >
+        Vortrag anfragen
+      </a>
     </div>
   );
 };

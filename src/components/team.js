@@ -46,38 +46,52 @@ const Profile = ({ name, profilePicture, title, primary, secondary }) => (
 
 const Description = () => (
   <div>
-    <p>
-      Wir sind <strong>Bitlingo</strong> - dein Ansprechpartner für alles rund
-      um das Thema Kryptowährungen und Blockchain-Technologie. Wir ermöglichen
-      deutschen Unternehmen zu einem Vorreiter in dieser neuen aufblühenden
-      Industrie zu werden.
-    </p>
-    <p>
-      Kryptowährungen sind immer noch Neuland für den Großteil der Deutschen.
-    </p>
+    <strong>
+      Wir sind ein junges 3-köpfiges Team aus den unterschiedlichsten Bereichen:
+    </strong>
+    <br />
+    <br />
     <span>
-      Tiefgreifendes Wissen zu vermitteln. und langjährige Erfahrung im Markt
-      Das Thema Kryptowährungen wird immer interessanter, gerade für
-      Kleinanleger, die nach alternativen Investments suchen.
+      <strong>Cenan</strong> befindet sich in den letzten Zügen seinen
+      Masterstudiums in Wirtschaftsmathematik und beschäftigt sich seit Anfang
+      2017 intensiv mit dem Thema Kryptowährungen. Seine Expertise liegt
+      insbesondere in der zu Grunde liegenden Kryptographie und der
+      finanzwirtschaftlichen Sichtweise auf Kryptowährungen als eine neue
+      Anlageklasse.
+    </span>
+    <br />
+    <br />
+    <span>
+      <strong>Grischa</strong> hat Medien- und Informationswesen studiert und
+      arbeitet momentan als Softwareentwickler. Bereits im Jahr 2013 hat er
+      erste Transaktionen mit Bitcoin durchgeführt und ist seither bei
+      verschiedenen Open-Source-Projekten im Kryptomarkt aktiv.
+    </span>
+    <br />
+    <br />
+    <span>
+      <strong>Laurin</strong> studiert Architektur und Städtebau im Master und
+      befasst sich mit dem Kryptomarkt seit Mitte 2017. Mit den verschiedensten
+      Projekten in Karlsruhe, Wien und Lissabon hat er während seines Studiums
+      auf sich aufmerksam gemacht. Seine kreative Ader komplettiert unser
+      3-köpfiges Gründerteam.
     </span>
     <span>
-      Problem: Kaum qualitativ hochwertige Informationsquellen. Es gibt zwar
-      einige Youtube, Tik Toker usw, die sich als Experten ausgeben, aber die
-      Informationen, die man dort erhält, sind zum Großteil sehr chaotisch,
-      unstrukturiert, auf Clickbait und Hype ausgelegt und teilweise sogar
-      falsch.
+      Das Thema Kryptowährungen ist in den letzten Jahren immer präsenter
+      geworden und dennoch gibt es kaum qualitativ hochwertige
+      Informationsquellen im deutschsprachigen Raum. Mit unserer langjährigen
+      Erfahrung und Expertise am Markt bieten wir ein umfangreiches
+      Vortragsportfolio zu den verschiedensten Themenbereichen des Kryptomarkts
+      an.
     </span>
+    <br />
+    <br />
     <span>
-      Lösung: Unser Ansatz ist anders. Wir bieten qualitativ hochwertige
-      Vorträge und Weiterbildungen vorrangig für Unternehmen, die sich für das
-      Thema interessieren und ihre Mitarbeiter schulen möchten. Wir bieten ein
-      Vortragsportfolio, mithilfe dessen sich Unternehmen Stück für Stück an den
-      Themen entlanghangeln können, um sich und ihren Mitarbeitern Wissen zu
-      Kryptowährungen anzueignen.
-    </span>
-    <span>
-      Alleinstellungsmerkmal: Bisher kein deutsches Unternehmen, das Vorträge in
-      dem Bereich anbietet.
+      Die Vorträge richten sich vorrangig an Unternehmen und deren Mitarbeiter,
+      sowie Privatpersonen, die sich für das Thema interessieren und
+      weiterbilden möchten. Die Vorträge haben jeweils eine Gesamtdauer von
+      60-120 Minuten (inkl. anschließender Fragerunde) und finden über Zoom
+      statt.
     </span>
   </div>
 );
