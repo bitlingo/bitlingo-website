@@ -8,7 +8,7 @@ const html = `
 <p><strong>Allgemeiner Hinweis und Pflichtinformationen</strong></p>
 <p><strong>Benennung der verantwortlichen Stelle</strong></p>
 <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-<p><span id="s3-t-firma">Kurt, Harter, Daum Bitlingo GbR</span><br><span id="s3-t-ansprechpartner">Cenan Kurt</span><br><span id="s3-t-strasse">Endingerstr. 39A</span><br><span id="s3-t-plz">79346</span> <span id="s3-t-ort">Endingen</span></p><p></p>
+<p><span id="s3-t-firma">Kurt, Harter, Daum Bitlingo GbR</span><br><span id="s3-t-ansprechpartner">Cenan Kurt</span><br><span id="s3-t-strasse">Halbmondstr. 2</span><br><span id="s3-t-plz">79206</span> <span id="s3-t-ort">Breisach am Rhein</span></p><p></p>
 <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
 
 <p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
