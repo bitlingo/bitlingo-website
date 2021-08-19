@@ -125,7 +125,7 @@ const presentationData = [
   },
   {
     title: "Ethereum und die Smart Contracts",
-    text: "Ethereum ist mit Abstand die zweitgrößte Kryptowährung hinter Bitcoin. Was sind Smart Contracts und welchen Nutzen haben sie in der realen Welt? Was hat es mit dem groß angekündigten Update auf Ethereum 2.0 auf sich und was ändert sich durch den Übergang zu Proof-of-Stake?",
+    text: "Ethereum ist die mit Abstand zweitgrößte Kryptowährung hinter Bitcoin. Was macht Ethereum anders als Bitcoin? Wie funktionieren Smart Contracts und welchen Nutzen bringen diese in der realen Welt? Wir geben Einblicke in das groß angekündigte Update auf Ethereum 2.0 und beschäftigen uns mit dem Übergang zu Proof of Stake.",
     picture: ethereum,
     learningContent: [
       "Was macht Ethereum so besonders?",
