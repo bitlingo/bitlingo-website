@@ -50,7 +50,7 @@ const Layout = ({ children }) => (
                     <h4>Bitlingo</h4>
                     <ul>
                       <li>
-                        <Link to="/about" title={"Über Bitlingo"}>
+                        <Link to="/#team" title={"Über Bitlingo"}>
                           Über uns
                         </Link>
                       </li>
@@ -60,17 +60,7 @@ const Layout = ({ children }) => (
                         </Link>
                       </li>
                       <li>
-                        <a
-                          className={"links__special"}
-                          href={"https://feedback.bitlingo.de/"}
-                          target={"_blank"}
-                          rel="noreferrer"
-                          title={
-                            "We look forward to receiving your great feedback"
-                          }
-                        >
-                          Feedback
-                        </a>
+                        <Link to="/impressum">Impressum</Link>
                       </li>
                     </ul>
                   </ul>
@@ -83,9 +73,9 @@ const Layout = ({ children }) => (
                     <h4>Support</h4>
                     <ul>
                       <li>
-                        <Link to="/contact" title={"Kontakt"}>
+                        <a href="mailto:info@bitlingo.de">
                           Kontakt
-                        </Link>
+                        </a>
                       </li>
                       <li>
                         <Link to="/privacy" title={"Datenschutzerklärung"}>
@@ -101,7 +91,7 @@ const Layout = ({ children }) => (
                 <div className={"widget__item"}>
                   <div className={"social"}>
                     <a
-                      href="https://twitter.com/Bitlingo1"
+                      href="https://twitter.com/Bitlingo_GbR"
                       target={"_blank"}
                       rel="noreferrer"
                       title={"Twitter"}

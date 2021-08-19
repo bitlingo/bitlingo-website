@@ -1,11 +1,10 @@
 import React from "react";
-
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Team from "../components/team";
-import Pricing from "../components/pricing";
-import featureImage from "../../static/images/vortrag.jpg";
-import bitlingoTeamImage from "../../static/images/bitlingo_team.jpg";
+import Pricing from "../components/pricing/pricing";
+import cowork from "../../static/images/cowork.jpg";
 import presentationData from "../data/presentationData";
 import Presentations from "../components/presentations";
 
@@ -18,17 +17,32 @@ const IndexPage = () => (
     <div className={"page-header home"}>
       <h1>Bitlingo GbR</h1>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
-      <img
-        alt={"Team Foto"}
-        src={featureImage}
-        style={{ borderRadius: "10px" }}
-      />
+      <div className={"container"}>
+        <span>
+          Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles
+          rund um das Thema Kryptowährungen und Blockchain-Technologie. Wir sind
+          ein junges 3-köpfiges Team mit dem Ziel möglichst vielen Menschen die
+          Welt der Kyptowährungen näher zu bringen. Mit unserer Expertise und
+          langjähriger Erfahrung im Kryptomarkt ermöglichen wir deutschen
+          Unternehmen zu einem Vorreiter in der neuen aufblühenden
+          Krypto-Industrie zu werden. Wir bieten umfangreiche Vorträge und
+          Weiterbildungsseminare an und bereiten Ihre Mitarbeiter:innen optimal
+          auf die Zukunft vor.
+        </span>
+      </div>
+      <img alt={"Team Foto"} src={cowork} style={{ borderRadius: "10px" }} />
     </div>
 
     <div className={"container"}>
       <div className={"features"}>
-        <Presentations data={presentationDataLandingPage} />
+        <hr />
+        <Presentations data={presentationDataLandingPage} showHr={false} showLearningContent={false} />
+        <Link to="/lectures">
+          <div className={"button"}>Weitere Vorträge</div>
+        </Link>
+        <hr />
         <Team />
+        <hr />
         <Pricing />
       </div>
     </div>
@@ -44,7 +58,7 @@ const IndexPage = () => (
         </div>
 
         <div className={"button"}>
-          <a href="mailto:info@bitlingo.de">Ich möchte Lernen!</a>
+          <a href="mailto:info@bitlingo.de">Ich möchte lernen!</a>
         </div>
       </div>
     </div>
