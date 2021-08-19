@@ -219,53 +219,7 @@ body {
       text-align: center;
     }
   }
-
-  .presentation__item {
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-
-      .col-6 {
-        align-self: center;
-      }
-
-      @media screen and (max-width: $break-small) {
-        .col-6.first {
-          order: 1;
-        }
   
-        .col-6 {
-          order: 2;
-        }
-      }
-    }
-
-    .presentation__content {
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-
-      h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 12px;
-        color: #1e1c21;
-        line-height: 2rem;
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 26px;
-      }
-    }
-
-    .thumbnail {
-      img {
-        max-width: 100%;
-      }
-    }
-  }
-
   .button {
     margin: 2rem auto;
   }

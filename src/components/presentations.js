@@ -1,5 +1,5 @@
 import React from "react";
-import Presentation from "./presentation";
+import Presentation from "./presentation/presentation";
 
 const Presentations = ({ data, showHr }) => (
   <div>
@@ -11,9 +11,7 @@ const Presentations = ({ data, showHr }) => (
         <Presentation
           key={index}
           index={index}
-          title={presentation.title}
-          text={presentation.text}
-          picture={presentation.picture}
+          data={presentation}
         />
         {index < data.length - 1 ? (
           <hr
