@@ -4,8 +4,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Team from "../components/team";
 import Pricing from "../components/pricing";
-import featureImage from "../../static/images/vortrag.jpg";
-import bitlingoTeamImage from "../../static/images/bitlingo_team.jpg";
+import cowork from "../../static/images/cowork.jpg";
 import presentationTeaserData from "../data/presentationTeaserData";
 import Presentations from "../components/presentations";
 
@@ -18,9 +17,10 @@ const IndexPage = () => (
     <div className={"page-header home"}>
       <h1>Bitlingo GbR</h1>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
+      <span>Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles rund um das Thema Kryptowährungen und Blockchain-Technologie. Wir sind ein junges 3-köpfiges Team mit dem Ziel möglichst vielen Menschen die Welt der Kyptowährungen näher zu bringen. Mit unserer Expertise und langjähriger Erfahrung im Kryptomarkt ermöglichen wir deutschen Unternehmen zu einem Vorreiter in der neuen aufblühenden Krypto-Industrie zu werden. Wir bieten umfangreiche Vorträge und Weiterbildungsseminare an und bereiten Ihre Mitarbeiter:innen optimal auf die Zukunft vor.</span>
       <img
         alt={"Team Foto"}
-        src={featureImage}
+        src={cowork}
         style={{ borderRadius: "10px" }}
       />
     </div>
