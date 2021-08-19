@@ -86,14 +86,6 @@ const Description = () => (
       Vortragsportfolio zu den verschiedensten Themenbereichen des Kryptomarkts
       an.
     </span>
-    <br />
-    <span>
-      Die Vorträge richten sich vorrangig an Unternehmen und deren
-      Mitarbeiter:innen, sowie Privatpersonen, die sich für das Thema
-      interessieren und weiterbilden möchten. Die Vorträge haben jeweils eine
-      Gesamtdauer von 60-120 Minuten (inkl. anschließender Fragerunde) und
-      finden über Zoom statt.
-    </span>
   </div>
 );
 
