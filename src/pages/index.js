@@ -36,7 +36,7 @@ const IndexPage = () => (
     <div className={"container"}>
       <div className={"features"}>
         <hr />
-        <Presentations data={presentationDataLandingPage} showHr={false} showLearningContent={false} />
+        <Presentations data={presentationDataLandingPage} showHr={false} showLearningContent={true} />
         <Link to="/lectures">
           <div className={"button"}>Weitere Vorträge</div>
         </Link>
