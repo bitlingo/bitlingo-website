@@ -45,14 +45,14 @@ const Pricing = () => {
     <div className="pricing-container">
       <h2>Preise</h2>
       <div className="description">
-      <span >
-        Die Kosten unserer Vorträge richten sich nach der jeweiligen Anzahl der
-        Teilnehmer:innen und der Dauer des Vortrags. Wir empfehlen Neueinsteigern
-        unseren 60-minütigen Einführungsvortrag “Genesis-Vortrag
-        Kryptowährungen”, der ein grundlegendes Blockchain-Wissen vermittelt.
-      </span>
+        <span>
+          Die Kosten unserer Vorträge richten sich nach der Anzahl der
+          Teilnehmer:innen und der Dauer des Vortrags. Die Vorträge haben eine
+          Gesamtdauer von jeweils 60-120 Minuten (inkl. anschließender
+          Fragerunde) und finden über Zoom statt.
+        </span>
       </div>
-      
+
       <div className="pricing-sliders">
         <Slider
           className="slider"

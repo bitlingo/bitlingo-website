@@ -52,7 +52,7 @@ const Description = () => (
     <br />
     <br />
     <span>
-      <strong>Cenan</strong> befindet sich in den letzten Zügen seinen
+      <strong>Cenan</strong> befindet sich in den letzten Zügen seines
       Masterstudiums in Wirtschaftsmathematik und beschäftigt sich seit Anfang
       2017 intensiv mit dem Thema Kryptowährungen. Seine Expertise liegt
       insbesondere in der zu Grunde liegenden Kryptographie und der
@@ -71,10 +71,10 @@ const Description = () => (
     <br />
     <span>
       <strong>Laurin</strong> studiert Architektur und Städtebau im Master und
-      befasst sich mit dem Kryptomarkt seit Mitte 2017. Mit den verschiedensten
-      Projekten in Karlsruhe, Wien und Lissabon hat er während seines Studiums
-      auf sich aufmerksam gemacht. Seine kreative Ader komplettiert unser
-      3-köpfiges Gründerteam.
+      befasst sich mit dem Kryptomarkt seit Mitte 2017. Während seines Studiums
+      machte er mit verschiedenen Projekten in Karlsruhe, Wien und Lissabon auf
+      sich aufmerksam. Seine kreative Ader komplettiert unser 3-köpfiges
+      Gründerteam.
     </span>
     <br />
     <br />
@@ -88,11 +88,11 @@ const Description = () => (
     </span>
     <br />
     <span>
-      Die Vorträge richten sich vorrangig an Unternehmen und deren Mitarbeiter:innen,
-      sowie Privatpersonen, die sich für das Thema interessieren und
-      weiterbilden möchten. Die Vorträge haben jeweils eine Gesamtdauer von
-      60-120 Minuten (inkl. anschließender Fragerunde) und finden über Zoom
-      statt.
+      Die Vorträge richten sich vorrangig an Unternehmen und deren
+      Mitarbeiter:innen, sowie Privatpersonen, die sich für das Thema
+      interessieren und weiterbilden möchten. Die Vorträge haben jeweils eine
+      Gesamtdauer von 60-120 Minuten (inkl. anschließender Fragerunde) und
+      finden über Zoom statt.
     </span>
   </div>
 );
