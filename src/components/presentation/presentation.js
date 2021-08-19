@@ -30,9 +30,11 @@ const PresentationPictureLeft = ({
             <strong>Lerninhalte</strong>
           </span>
           <ul>
-            {learningContent.map((lesson, index) => (
-              <li key={index}>{lesson}</li>
-            ))}
+            {learningContent
+              ? learningContent.map((lesson, index) => (
+                  <li key={index}>{lesson}</li>
+                ))
+              : null}
           </ul>
           <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
             <p>Vortrag anfragen</p>
@@ -60,9 +62,11 @@ const PresentationPictureRight = ({
             <strong>Lerninhalte</strong>
           </span>
           <ul>
-            {learningContent.map((lesson, index) => (
-              <li key={index}>{lesson}</li>
-            ))}
+            {learningContent
+              ? learningContent.map((lesson, index) => (
+                  <li key={index}>{lesson}</li>
+                ))
+              : null}
           </ul>
           <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
             <p>Vortrag anfragen</p>
@@ -71,7 +75,7 @@ const PresentationPictureRight = ({
       </div>
       <div className={"col-6 first"}>
         <div className={"thumbnail"}>
-        <Badge.Ribbon
+          <Badge.Ribbon
             placement="end"
             color="#f2a900"
             text={level === 0 ? "Anfänger" : "Fortgeschritten"}
