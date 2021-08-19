@@ -2,6 +2,19 @@ import React from "react";
 import "./presentation.scss";
 import { Badge } from "antd";
 
+const LearningContent = ({ content }) => (
+  <div>
+    <span>
+      <strong>Lerninhalte</strong>
+    </span>
+    <ul>
+      {content.map((lesson, index) => (
+        <li key={index}>{lesson}</li>
+      ))}
+    </ul>
+  </div>
+);
+
 const PresentationPictureLeft = ({
   title,
   text,
@@ -26,16 +39,9 @@ const PresentationPictureLeft = ({
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
-          <span>
-            <strong>Lerninhalte</strong>
-          </span>
-          <ul>
-            {learningContent
-              ? learningContent.map((lesson, index) => (
-                  <li key={index}>{lesson}</li>
-                ))
-              : null}
-          </ul>
+          {learningContent ? (
+            <LearningContent content={learningContent} />
+          ) : null}
           <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
             <p>Vortrag anfragen</p>
           </a>
@@ -58,16 +64,9 @@ const PresentationPictureRight = ({
         <div className={"presentation__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
-          <span>
-            <strong>Lerninhalte</strong>
-          </span>
-          <ul>
-            {learningContent
-              ? learningContent.map((lesson, index) => (
-                  <li key={index}>{lesson}</li>
-                ))
-              : null}
-          </ul>
+          {learningContent ? (
+            <LearningContent content={learningContent} />
+          ) : null}
           <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
             <p>Vortrag anfragen</p>
           </a>
