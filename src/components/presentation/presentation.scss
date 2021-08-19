@@ -1,11 +1,10 @@
 $break-small: 719px;
 
-ul {
-  list-style-type: circle;
-  margin-left: 10px;
-}
-
 .presentation__item {
+  ul {
+    list-style-type: circle;
+    margin-left: 10px;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
