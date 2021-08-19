@@ -80,7 +80,7 @@ const presentationData = [
     text: "Bei der sicheren Aufbewahrung von Kryptowährungen trifft man schnell auf sogenannte Hardware Wallets. Wir erklären Schritt für Schritt den richtigen Umgang mit einer solchen Wallet: Vom Kauf bis zur Einrichtung und dem Versenden von Coins.",
     picture: ledgerBitcoin,
     learningContent: [
-      "Was macht eine Hardware wallet so sicher?",
+      "Was macht eine Hardware Wallet so sicher?",
       "Vergleich der herkömmlichen Anbieter",
       "Die sichere Aufbewahrung des privaten Schlüssels",
       "Unsere Empfehlung",
@@ -113,7 +113,7 @@ const presentationData = [
   },
   {
     title: "Bitcoin und die Umweltprobleme",
-    text: "In den Medien liest man immer wieder von den riesigen Mengen an Strom, die durch Bitcoin-Mining verbraucht werden. Was ist dran und wie groß ist der Anteil erneuerbarer Energien bei dem Mining-Prozess? Wir ziehen einen Vergleich zum traditionellen Finanzsystem.",
+    text: "In den Medien liest man immer wieder von den riesigen Mengen an Strom, die durch Bitcoin-Mining verbraucht werden. Was ist dran an dem Gerücht und wie groß ist der Anteil erneuerbarer Energien bei dem Mining-Prozess? Wir ziehen einen Vergleich zum traditionellen Finanzsystem.",
     picture: umweltBitcoin,
     learningContent: [
       "Bitcoin-Mining und dessen Sicherheit",

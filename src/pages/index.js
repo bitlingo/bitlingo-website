@@ -23,11 +23,11 @@ const IndexPage = () => (
           rund um das Thema Kryptowährungen und Blockchain-Technologie. Wir sind
           ein junges 3-köpfiges Team mit dem Ziel möglichst vielen Menschen die
           Welt der Kyptowährungen näher zu bringen. Mit unserer Expertise und
-          langjähriger Erfahrung im Kryptomarkt ermöglichen wir deutschen
-          Unternehmen zu einem Vorreiter in der neuen aufblühenden
-          Krypto-Industrie zu werden. Wir bieten umfangreiche Vorträge und
-          Weiterbildungsseminare an und bereiten Ihre Mitarbeiter:innen optimal
-          auf die Zukunft vor.
+          langjähriger Erfahrung im Kryptomarkt ermöglichen wir
+          deutschsprachigen Unternehmen zu einem Vorreiter in der neuen
+          aufblühenden Krypto-Industrie zu werden. Wir bieten umfangreiche
+          Vorträge und Weiterbildungsseminare an und bereiten Deine
+          Mitarbeiter:innen optimal auf die Zukunft vor.
         </span>
       </div>
       <img alt={"Team Foto"} src={cowork} style={{ borderRadius: "10px" }} />
@@ -36,7 +36,11 @@ const IndexPage = () => (
     <div className={"container"}>
       <div className={"features"}>
         <hr />
-        <Presentations data={presentationDataLandingPage} showHr={false} showLearningContent={true} />
+        <Presentations
+          data={presentationDataLandingPage}
+          showHr={true}
+          showLearningContent={true}
+        />
         <Link to="/lectures">
           <div className={"button"}>Weitere Vorträge</div>
         </Link>
