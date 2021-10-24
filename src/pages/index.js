@@ -55,10 +55,7 @@ const IndexPage = () => (
       <div className={"container"}>
         <div className={"call-to-action__content"}>
           <h2>Interesse an einem Vortrag?</h2>
-          <p>
-            Treten Sie in Kontakt mit dem Bitlingo Team und lassen Sie sich
-            beraten.
-          </p>
+          <p>Tritt in Kontakt mit dem Bitlingo Team und lass Dich beraten.</p>
         </div>
 
         <div className={"button"}>
