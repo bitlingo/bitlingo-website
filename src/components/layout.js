@@ -73,9 +73,7 @@ const Layout = ({ children }) => (
                     <h4>Support</h4>
                     <ul>
                       <li>
-                        <a href="mailto:info@bitlingo.de">
-                          Kontakt
-                        </a>
+                        <a href="mailto:info@bitlingo.de">Kontakt</a>
                       </li>
                       <li>
                         <Link to="/privacy" title={"Datenschutzerklärung"}>
@@ -91,7 +89,7 @@ const Layout = ({ children }) => (
                 <div className={"widget__item"}>
                   <div className={"social"}>
                     <a
-                      href="https://twitter.com/Bitlingo_GbR"
+                      href="https://twitter.com/bitlingo_de"
                       target={"_blank"}
                       rel="noreferrer"
                       title={"Twitter"}
@@ -107,7 +105,13 @@ const Layout = ({ children }) => (
                     >
                       <img alt={"GitHub"} src={iconGitHub} />
                     </a>
-                    {/* <a href="https://www.instagram.com/bitlingo.de/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a> */}
+                    <a
+                      href="https://www.instagram.com/bitlingo/"
+                      target={"_blank"}
+                      title={"Instagram"}
+                    >
+                      <img alt={"Instagram"} src={iconInstagram} />
+                    </a>
                   </div>
                 </div>
               </div>
