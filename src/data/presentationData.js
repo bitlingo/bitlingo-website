@@ -40,7 +40,7 @@ const presentationData = [
   },
   {
     title: "Kryptowährungen kaufen - Eine Schritt-für-Schritt-Anleitung",
-    text: "Heutzutage gibt es sehr viele verschiedene Möglichkeiten Kryptowährungen zu kaufen. Sei es anonym, außerbörslich oder über eine zentralisierte Exchange. Es gibt einiges zu beachten und große Preisunterschiede zwischen den verschiedenen Alternativen. Wir beschäftigen uns mit dem Thema welcher Anbieter vertrauenswürdig ist und gleichzeitig niedrige Gebühren bietet und stellen unsere favorisierte Lösung vor.",
+    text: "Heutzutage gibt es sehr viele verschiedene Möglichkeiten Kryptowährungen zu kaufen. Sei es anonym, außerbörslich oder über eine zentralisierte Exchange. Es gibt einiges zu beachten und große Preisunterschiede zwischen den verschiedenen Alternativen. Wir beschäftigen uns mit dem Thema, welcher Anbieter vertrauenswürdig ist und gleichzeitig niedrige Gebühren bietet und stellen unsere favorisierte Lösung vor.",
     picture: buyBitcoin,
     learningContent: [
       "Vergleich der verschiedenen Krypto-Börsen",

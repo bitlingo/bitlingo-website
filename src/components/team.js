@@ -71,10 +71,9 @@ const Description = () => (
     <br />
     <span>
       <strong>Laurin</strong> studiert Architektur und Städtebau im Master und
-      befasst sich mit dem Kryptomarkt seit Mitte 2017. Während seines Studiums
-      machte er mit verschiedenen Projekten in Karlsruhe, Wien und Lissabon auf
-      sich aufmerksam. Seine kreative Ader komplettiert unser 3-köpfiges
-      Gründerteam.
+      befasst sich mit dem Kryptomarkt seit 2017. Während seines Studiums machte
+      er mit verschiedenen Projekten in Karlsruhe, Wien und Lissabon auf sich
+      aufmerksam. Seine kreative Ader komplettiert unser 3-köpfiges Team.
     </span>
     <br />
     <br />
