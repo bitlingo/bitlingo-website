@@ -12,19 +12,19 @@ const presentationDataLandingPage = presentationData.slice(0, 3);
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Bitlingo GbR" />
+    <Seo title="Bitlingo - deine Lernpartner" />
 
     <div className={"page-header home"}>
-      <h1>Bitlingo GbR</h1>
+      <h1>Bitlingo</h1>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
       <div className={"container"}>
         <span>
           Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles
           rund um das Thema Kryptowährungen und Blockchain-Technologie. Wir sind
           ein junges 3-köpfiges Team mit dem Ziel möglichst vielen Menschen die
-          Welt der Kyptowährungen näher zu bringen. Mit unserer Expertise und
+          Welt der Kryptowährungen näher zu bringen. Mit unserer Expertise und
           langjähriger Erfahrung im Kryptomarkt ermöglichen wir
-          deutschsprachigen Unternehmen zu einem Vorreiter in der neuen
+          deutschsprachigen Unternehmen zu einem Vorreiter in der neuen,
           aufblühenden Krypto-Industrie zu werden. Wir bieten umfangreiche
           Vorträge und Weiterbildungsseminare an und bereiten Deine
           Mitarbeiter:innen optimal auf die Zukunft vor.
