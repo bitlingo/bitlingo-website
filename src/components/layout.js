@@ -96,7 +96,7 @@ const Layout = ({ children }) => (
                     >
                       <img alt={"Twitter"} src={iconTwitter} />
                     </a>
-                    {/* <a href="https://www.linkedin.com/company/histaff/" target={"_blank"} title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a> */}
+                    {/* <a href="https://www.linkedin.com/company/histaff/" target={"_blank"} rel="noreferrer" title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a> */}
                     <a
                       href="https://github.com/bitlingo"
                       target={"_blank"}
@@ -108,6 +108,7 @@ const Layout = ({ children }) => (
                     <a
                       href="https://www.instagram.com/bitlingo/"
                       target={"_blank"}
+                      rel="noreferrer"
                       title={"Instagram"}
                     >
                       <img alt={"Instagram"} src={iconInstagram} />
