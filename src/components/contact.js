@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Form, Button, Input, Select } from "antd";
 import { UserOutlined, MailOutlined } from "@ant-design/icons";
-import emailjs, { EmailJSResponseStatus } from "emailjs-com";
+import emailjs from "emailjs-com";
 import presentationData from "../data/presentationData";
 
 const Contact = ({ presentationTitle }) => {
@@ -12,7 +12,6 @@ const Contact = ({ presentationTitle }) => {
   emailjs.init("user_GdhTdd3gmWLtdartmfCpX");
 
   const [emailSent, setEmailSent] = useState(false);
-  console.log(presentationTitle);
 
   const handleSubmit = (values) => {
     emailjs
@@ -23,7 +22,6 @@ const Contact = ({ presentationTitle }) => {
         "user_GdhTdd3gmWLtdartmfCpX"
       )
       .then((result) => {
-        console.log(result);
         if (result.status === 200) {
           setEmailSent(true);
         }
@@ -37,7 +35,7 @@ const Contact = ({ presentationTitle }) => {
       method="post"
       onFinish={handleSubmit}
       layout="vertical"
-      style={{ width: 500 }}
+      style={{ width: 600 }}
     >
       <Form.Item
         label="Name"
