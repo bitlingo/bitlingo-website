@@ -7,7 +7,7 @@ import "../../static/styles/main.scss";
 import logo from "../../static/images/logo/logo4.svg";
 import iconTwitter from "../../static/images/icon-twitter.svg";
 import iconGitHub from "../../static/images/icon-github.svg";
-/* import iconLinkedin from "../../static/images/icon-linkedin.svg"; */
+import iconLinkedin from "../../static/images/icon-linkedin.svg";
 import iconInstagram from "../../static/images/icon-instagram.svg";
 
 const Layout = ({ children }) => (
@@ -96,7 +96,14 @@ const Layout = ({ children }) => (
                     >
                       <img alt={"Twitter"} src={iconTwitter} />
                     </a>
-                    {/* <a href="https://www.linkedin.com/company/histaff/" target={"_blank"} rel="noreferrer" title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a> */}
+                    <a
+                      href="https://www.linkedin.com/company/bitlingo/"
+                      target={"_blank"}
+                      rel="noreferrer"
+                      title={"LinkedIn"}
+                    >
+                      <img alt={"LinkedIn"} src={iconLinkedin} />
+                    </a>
                     <a
                       href="https://github.com/bitlingo"
                       target={"_blank"}
@@ -121,8 +128,8 @@ const Layout = ({ children }) => (
             <div className={"copyright"}>
               <p>
                 Copyright {new Date().getFullYear()}, {` `}{" "}
-                <a href="https://bitlingo.de" title={"Bitlingo"}>
-                  Bitlingo
+                <a href="https://bitlingo.de" title={"Zur Startseite"}>
+                  Bitlingo GbR
                 </a>
               </p>
             </div>

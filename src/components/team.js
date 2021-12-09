@@ -47,7 +47,8 @@ const Profile = ({ name, profilePicture, title, primary, secondary }) => (
 const Description = () => (
   <div>
     <strong>
-      Wir sind ein junges 3-köpfiges Team aus den unterschiedlichsten Bereichen:
+      Wir sind ein junges 3-köpfiges Team mit dem Ziel, möglichst vielen
+      Menschen die Welt der Kryptowährungen näher zu bringen:
     </strong>
     <br />
     <br />
@@ -62,28 +63,31 @@ const Description = () => (
     <br />
     <br />
     <span>
-      <strong>Grischa</strong> hat Medien- und Informationswesen studiert und
-      arbeitet momentan als Softwareentwickler. Bereits im Jahr 2013 hat er
-      erste Transaktionen mit Bitcoin durchgeführt und ist seither bei
-      verschiedenen Open-Source-Projekten im Kryptomarkt aktiv.
+      <strong>Grischa</strong> ist Softwareentwickler in einem stark wachsendem
+      Startup. Bereits im Jahr 2013 hat er erste Transaktionen mit Bitcoin
+      durchgeführt und ist seither bei verschiedenen Open-Source-Projekten im
+      Kryptomarkt aktiv.
     </span>
     <br />
     <br />
     <span>
       <strong>Laurin</strong> studiert Architektur und Städtebau im Master und
       befasst sich mit dem Kryptomarkt seit 2017. Während seines Studiums machte
-      er mit verschiedenen Projekten in Karlsruhe, Wien und Lissabon auf sich
-      aufmerksam. Seine kreative Ader komplettiert unser 3-köpfiges Team.
+      er mit verschiedenen Design-Projekten in Karlsruhe, Wien und Lissabon auf
+      sich aufmerksam. Seine kreative Ader komplettiert unser 3-köpfiges
+      Gründerteam.
     </span>
     <br />
     <br />
     <span>
       Das Thema Kryptowährungen ist in den letzten Jahren immer präsenter
       geworden und dennoch gibt es kaum qualitativ hochwertige
-      Informationsquellen im deutschsprachigen Raum. Mit unserer langjährigen
-      Erfahrung und Expertise am Markt bieten wir ein umfangreiches
-      Vortragsportfolio zu den verschiedensten Themenbereichen des Kryptomarkts
-      an.
+      Informationsquellen im deutschsprachigen Raum. Mit unserer mehrjährigen
+      Erfahrung und Expertise am Markt ermöglichen wir deutschsprachigen
+      Unternehmen zu einem Vorreiter in der neuen Industrie zu werden. Wir
+      bieten ein umfangreiches Vortragsportfolio zu verschiedenen
+      Themenbereichen des Kryptomarkts an und bereiten Deine Mitarbeiter:innen
+      optimal auf die Zukunft vor.
     </span>
   </div>
 );
