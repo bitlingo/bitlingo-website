@@ -7,7 +7,7 @@ const Presentations = ({ data, showHr, showLearningContent }) => (
       <h2>Bitlingo Vorträge</h2>
     </div>
     {data.map((presentation, index) => (
-      <div>
+      <div key={index}>
         <Presentation
           key={index}
           index={index}
