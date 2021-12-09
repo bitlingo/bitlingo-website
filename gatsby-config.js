@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Bitlingo`,
+    title: ``,
     description: `Bitcoin, Blockchain und Kryptowährungen einfach erklärt`,
     author: `@bitlingo`,
   },
