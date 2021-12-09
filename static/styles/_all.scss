@@ -54,11 +54,11 @@ body {
 
   .button {
     width: 210px;
-    height: 47px;
+    height: 37px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 47px;
+    line-height: 37px;
     display: block;
     background: $bitlingo-brand;
     border-radius: 4px;
@@ -128,11 +128,14 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #ffffff;
-    z-index: 100;
+    z-index: 1000000;
+    border-bottom: 2px solid #f7931a;
+    background-color: antiquewhite;
 
     .logo {
       img {
-        height: 47px;
+        height: 37px;
+        width: 100%;
       }
     }
 
@@ -143,11 +146,11 @@ body {
       .get-started {
         a {
           width: 210px;
-          height: 47px;
+          height: 37px;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
-          line-height: 47px;
+          line-height: 37px;
           display: block;
           background: $bitlingo-brand;
           border-radius: 4px;
@@ -189,13 +192,13 @@ body {
     p {
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
+      font-size: 25px;
       line-height: 34px;
     }
 
     img {
-      margin-top: 61px;
-      max-width: 65%;
+      margin-top: 60px;
+      max-width: 55%;
     }
 
     &.home {
@@ -225,7 +228,7 @@ body {
       text-align: center;
     }
   }
-  
+
   .button {
     margin: 2rem auto;
   }
@@ -300,7 +303,6 @@ body {
     }
 
     .button {
-      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -315,7 +317,7 @@ body {
         font-size: 18px;
         background-color: #ffffff;
         width: 184px;
-        margin-left: auto;
+        margin: auto;
         border-radius: 4px;
         height: 54px;
         display: flex;
