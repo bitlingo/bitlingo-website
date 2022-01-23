@@ -15,19 +15,13 @@ const IndexPage = () => (
     <Seo title="Bitlingo - deine Lernpartner" />
 
     <div className={"page-header home"}>
-      <h1>Bitlingo</h1>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
       <div className={"container"}>
         <span>
-          Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles
-          rund um das Thema Kryptowährungen und Blockchain-Technologie. Wir sind
-          ein junges 3-köpfiges Team mit dem Ziel möglichst vielen Menschen die
-          Welt der Kryptowährungen näher zu bringen. Mit unserer Expertise und
-          langjähriger Erfahrung im Kryptomarkt ermöglichen wir
-          deutschsprachigen Unternehmen zu einem Vorreiter in der neuen,
-          aufblühenden Krypto-Industrie zu werden. Wir bieten umfangreiche
-          Vorträge und Weiterbildungsseminare an und bereiten Deine
-          Mitarbeiter:innen optimal auf die Zukunft vor.
+          Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles rund um das Thema
+          Kryptowährungen und Blockchain-Technologie. Wir bieten Dir und Deinem
+          Unternehmen umfangreiche Live-Vorträge und Weiterbildungsseminare an
+          und sind die Ansprechpartner Nummer Eins für all Deine Fragen.
         </span>
       </div>
       <img alt={"Team Foto"} src={cowork} style={{ borderRadius: "10px" }} />
@@ -54,10 +48,9 @@ const IndexPage = () => (
     <div className={"call-to-action"}>
       <div className={"container"}>
         <div className={"call-to-action__content"}>
-          <h2>Interesse an einem Vortrag?</h2>
+          <h2>Wir haben Dein Interesse geweckt?</h2>
           <p>
-            Tritt in Kontakt mit dem Bitlingo Team und lass Dich beraten. Wir
-            freuen uns von Dir zu hören.
+            Dann kontaktiere uns gerne und wir finden gemeinsam einen Termin.
           </p>
         </div>
 
