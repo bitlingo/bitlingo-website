@@ -16,13 +16,11 @@ const IndexPage = () => (
 
     <div className={"page-header home"}>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
-      <div className={"container"}>
-        <span>
+      <div className="contain-text">
           Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles rund um das Thema
           Kryptowährungen und Blockchain-Technologie. Wir bieten Dir und Deinem
           Unternehmen umfangreiche Live-Vorträge und Weiterbildungsseminare an
           und sind die Ansprechpartner Nummer Eins für all Deine Fragen.
-        </span>
       </div>
       <img alt={"Team Foto"} src={cowork} style={{ borderRadius: "10px" }} />
     </div>
