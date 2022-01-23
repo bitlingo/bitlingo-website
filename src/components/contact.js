@@ -3,8 +3,9 @@ import { Form, Button, Input, Select } from "antd";
 import { UserOutlined, MailOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
 import presentationData from "../data/presentationData";
+import "./contact.scss";
 
-const Contact = ({ presentationTitle }) => {
+const Contact = ({ presentationTitle, toogleContact }) => {
   const form = useRef();
   const { TextArea } = Input;
   const { Option } = Select;
@@ -90,9 +91,12 @@ const Contact = ({ presentationTitle }) => {
         <TextArea placeholder="Deine Nachricht an Bitlingo" rows={5} />
       </Form.Item>
 
-      <Form.Item>
+      <Form.Item className="action-buttons">
         <Button type="primary" htmlType="submit" disabled={false}>
           Senden
+        </Button>
+        <Button disabled={false} onClick={toogleContact}>
+          Schließen
         </Button>
       </Form.Item>
     </Form>

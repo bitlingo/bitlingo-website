@@ -13,11 +13,19 @@ const ContactPart = ({ presentationTitle }) => {
   return (
     <div>
       {contactVisible ? (
-        <Contact presentationTitle={presentationTitle} />
+        <div className="contact-form">
+          <Contact
+            presentationTitle={presentationTitle}
+            toogleContact={handleContact}
+          />
+          {/* <Button onClick={handleContact}>Kontaktformular schließen</Button> */}
+        </div>
       ) : (
-        <Button type="primary" onClick={handleContact}>
-          Vortrag anfragen
-        </Button>
+        <div className="contact-form">
+          <Button type="primary" onClick={handleContact}>
+            Vortrag anfragen
+          </Button>
+        </div>
       )}
     </div>
   );
