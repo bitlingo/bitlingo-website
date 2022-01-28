@@ -21,7 +21,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
   const userId = process.env.EMAIL_JS_USER_ID;
   emailjs.init(userId);
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (values) => {
