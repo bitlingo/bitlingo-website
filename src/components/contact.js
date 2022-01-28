@@ -44,6 +44,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       onFinish={handleSubmit}
       layout="vertical"
       style={{ width: 600 }}
+      initialValues={{ lecture: presentationTitle }}
     >
       <Form.Item
         label="Name"
