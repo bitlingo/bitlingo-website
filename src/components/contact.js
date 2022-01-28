@@ -8,7 +8,7 @@ import "./contact.less";
 const MailSent = () => {
   return (
     <div className="mail-sent">
-      <CheckCircleOutlined />
+      <CheckCircleOutlined style={{fontSize: '28px', color: 'green', paddingTop: '8px', paddingRight: '8px'}} />
       <h1>Danke für deine Nachricht!</h1>
     </div>
   );
@@ -21,7 +21,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
   const userId = process.env.EMAIL_JS_USER_ID;
   emailjs.init(userId);
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (values) => {
