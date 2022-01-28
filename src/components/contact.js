@@ -1,35 +1,42 @@
 import React, { useState, useRef } from "react";
 import { Form, Button, Input, Select } from "antd";
-import { UserOutlined, MailOutlined } from "@ant-design/icons";
+import { UserOutlined, MailOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
 import presentationData from "../data/presentationData";
 import "./contact.less";
+
+const MailSent = () => {
+  return (
+    <div className="mail-sent">
+      <CheckCircleOutlined />
+      <h1>Danke für deine Nachricht!</h1>
+    </div>
+  );
+};
 
 const Contact = ({ presentationTitle, toogleContact }) => {
   const form = useRef();
   const { TextArea } = Input;
   const { Option } = Select;
+  const userId = process.env.EMAIL_JS_USER_ID;
+  emailjs.init(userId);
 
-  emailjs.init("user_GdhTdd3gmWLtdartmfCpX");
-
+  const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (values) => {
+    setIsLoading(true);
     emailjs
-      .send(
-        "service_km0nukb",
-        "template_2kcug2l",
-        values, 
-        "user_GdhTdd3gmWLtdartmfCpX"
-      )
+      .send("service_km0nukb", "template_2kcug2l", values, userId)
       .then((result) => {
         if (result.status === 200) {
           setEmailSent(true);
+          setIsLoading(false);
         }
       });
   };
 
-  return (
+  return emailSent ? <MailSent /> : (
     <Form
       ref={form}
       name="cf"
@@ -92,7 +99,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       </Form.Item>
 
       <Form.Item className="action-buttons">
-        <Button type="primary" htmlType="submit" disabled={false}>
+        <Button type="primary" htmlType="submit" disabled={false} loading={isLoading}>
           Senden
         </Button>
         <Button disabled={false} onClick={toogleContact}>
