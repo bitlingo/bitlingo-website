@@ -1,4 +1,9 @@
-$break-small: 719px;
+@break-small: 719px;
+
+
+.contact-form.ant-btn-primary:hover {
+  color: @bitlingo-brand;
+}
 
 body {
   color: #797283;
@@ -22,21 +27,21 @@ body {
   }
 
   hr {
-    color: $bitlingo-brand;
+    color: @bitlingo-brand;
     border: 2px solid;
     border-radius: 10%;
     margin: 4rem 0;
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       margin: 2rem 0;
     }
   }
 
   a {
-    color: $bitlingo-brand;
+    color: @bitlingo-brand;
 
     &:hover,
     &:active {
-      color: darken($bitlingo-brand, 5);
+      color: darken(@bitlingo-brand, 5);
     }
   }
 
@@ -48,15 +53,18 @@ body {
 
   .ant-btn-primary {
     color: #ffffff;
-    background-color: $bitlingo-brand;
-    background: $bitlingo-brand;
-    border-color: darken($bitlingo-brand, 5);
-    :hover,
-    :focus {
-      background-color: darken($bitlingo-brand, 5);
-      background: $bitlingo-brand;
-      border-color: darken($bitlingo-brand, 5);
-    }
+    background-color: @bitlingo-brand;
+    background: @bitlingo-brand;
+    border-color: darken(@bitlingo-brand, 5%);
+  }
+  .ant-btn.ant-btn-primary:hover {
+    color: #ffffff;
+    background-color: darken(@bitlingo-brand, 5%);
+    border-color: darken(@bitlingo-brand, 5%);
+  }
+  .ant-btn:hover {
+    color: black;
+    border-color: darken(#000, 5%);
   }
 
   .button {
@@ -67,7 +75,7 @@ body {
     font-size: 16px;
     line-height: 37px;
     display: block;
-    background: $bitlingo-brand;
+    background: @bitlingo-brand;
     border-radius: 4px;
     text-align: center;
     color: #ffffff;
@@ -159,14 +167,14 @@ body {
           font-size: 16px;
           line-height: 37px;
           display: block;
-          background: $bitlingo-brand;
+          background: @bitlingo-brand;
           border-radius: 4px;
           text-align: center;
           color: #ffffff;
         }
       }
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         .get-started {
           display: none;
         }
@@ -217,7 +225,7 @@ body {
       margin: auto;
     }
 
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       padding-top: 1px;
       padding-bottom: 50px;
 
@@ -260,13 +268,13 @@ body {
       }
       // antd override
       .ant-slider-track {
-        background-color: $bitlingo-brand;
+        background-color: @bitlingo-brand;
       }
       .ant-slider-handle {
-        background-color: lighten($bitlingo-brand, 10);
+        background-color: lighten(@bitlingo-brand, 10);
       }
       .ant-tooltip-open {
-        border-color: darken($bitlingo-brand, 10);
+        border-color: darken(@bitlingo-brand, 10);
       }
     }
     .price {
@@ -275,7 +283,7 @@ body {
   }
 
   .features {
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       .col-6.first {
         order: 1;
       }
@@ -297,7 +305,7 @@ body {
   }
 
   .call-to-action {
-    background-color: $bitlingo-brand;
+    background-color: @bitlingo-brand;
     color: #ffffff;
     padding: 65px 0;
     border-radius: 40px 40px 0px 0px;
@@ -305,7 +313,7 @@ body {
     .container {
       display: flex;
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         display: block;
 
         .call-to-action__content {
@@ -319,7 +327,7 @@ body {
       flex-direction: column;
       justify-content: center;
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         display: block;
         width: 100%;
         margin-top: 30px;
@@ -337,9 +345,9 @@ body {
         justify-content: center;
         font-weight: bold;
         flex-direction: column;
-        color: $bitlingo-brand;
+        color: @bitlingo-brand;
 
-        @media screen and (max-width: $break-small) {
+        @media screen and (max-width: @break-small) {
           margin: 0 auto;
         }
       }
@@ -377,12 +385,12 @@ body {
   footer {
     padding: 120px 0 45px;
 
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       padding: 50px 0 45px;
     }
 
     .widget__item {
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         padding: 15px 0 0;
       }
 
@@ -416,7 +424,7 @@ body {
 
               &:hover,
               &:active {
-                color: $bitlingo-brand;
+                color: @bitlingo-brand;
               }
             }
           }
@@ -426,7 +434,7 @@ body {
       .social {
         text-align: right;
 
-        @media screen and (max-width: $break-small) {
+        @media screen and (max-width: @break-small) {
           text-align: center;
         }
 
@@ -453,7 +461,7 @@ body {
       text-align: center;
       margin-top: 90px;
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         margin-top: 31px;
       }
 
