@@ -1,5 +1,5 @@
 import React from "react";
-import "./presentation.scss";
+import "./presentation.less";
 import { Badge, Button } from "antd";
 import Contact from "../contact";
 

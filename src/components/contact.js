@@ -3,7 +3,7 @@ import { Form, Button, Input, Select } from "antd";
 import { UserOutlined, MailOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
 import presentationData from "../data/presentationData";
-import "./contact.scss";
+import "./contact.less";
 
 const Contact = ({ presentationTitle, toogleContact }) => {
   const form = useRef();
