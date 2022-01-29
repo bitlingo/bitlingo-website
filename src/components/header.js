@@ -4,18 +4,18 @@ import React from "react";
 import logo from "../../static/images/logo/logo4.svg";
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="sticky">
     <div className={"container"}>
       <div className={"top-menu"}>
         <div className={"logo"}>
           <Link to="/" title={"Bitlingo"}>
-            <img alt={"Logo"} src={logo} width="200" />
+            <img alt={"Logo"} src={logo}/>
           </Link>
         </div>
 
         <div className={"get-started"}>
           <Link to="/lectures" title={"Bitlingo Vorträge"}>
-            Zu unseren Vorträgen
+            Alle Vorträge
           </Link>
         </div>
       </div>

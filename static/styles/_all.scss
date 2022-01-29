@@ -1,12 +1,7 @@
 $break-small: 719px;
 
 body {
-  font-family: Inter;
   color: #797283;
-
-  p {
-    font-family: Inter;
-  }
 
   h1,
   h2,
@@ -14,7 +9,6 @@ body {
   h4,
   h5,
   h6 {
-    font-family: PT Serif;
     line-height: 43px;
     color: #1e1c21;
   }
@@ -46,13 +40,19 @@ body {
     }
   }
 
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
   .button {
     width: 210px;
-    height: 47px;
+    height: 37px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 47px;
+    line-height: 37px;
     display: block;
     background: $bitlingo-brand;
     border-radius: 4px;
@@ -118,14 +118,18 @@ body {
   }
 
   header {
-    background-color: #fdfaff;
     display: block;
-    padding: 39px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    z-index: 1000000;
+    border-bottom: 2px solid #f7931a;
+    background-color: antiquewhite;
 
     .logo {
+      height: 37px;
       img {
-        width: 151px;
-        height: 44px;
+        height: 100%;
       }
     }
 
@@ -136,11 +140,11 @@ body {
       .get-started {
         a {
           width: 210px;
-          height: 47px;
+          height: 37px;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
-          line-height: 47px;
+          line-height: 37px;
           display: block;
           background: $bitlingo-brand;
           border-radius: 4px;
@@ -160,7 +164,6 @@ body {
   .page-header {
     text-align: center;
     padding: 0px 0 100px 0;
-    background-color: #fdfaff;
     border-radius: 0px 0px 40px 40px;
 
     h1 {
@@ -183,17 +186,22 @@ body {
     p {
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
+      font-size: 25px;
       line-height: 34px;
     }
 
     img {
-      margin-top: 61px;
-      max-width: 65%;
+      margin-top: 60px;
+      max-width: 55%;
     }
 
     &.home {
-      padding-bottom: 30px;
+      padding: 40px 0px;
+    }
+
+    .contain-text {
+      width: 50%;
+      margin: auto;
     }
 
     @media screen and (max-width: $break-small) {
@@ -219,7 +227,7 @@ body {
       text-align: center;
     }
   }
-  
+
   .button {
     margin: 2rem auto;
   }
@@ -294,7 +302,6 @@ body {
     }
 
     .button {
-      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -309,7 +316,7 @@ body {
         font-size: 18px;
         background-color: #ffffff;
         width: 184px;
-        margin-left: auto;
+        margin: auto;
         border-radius: 4px;
         height: 54px;
         display: flex;
