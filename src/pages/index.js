@@ -14,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Bitlingo - deine Lernpartner" />
 
-    <div className={"page-header home"}>
+    <div className={"page-header home container"}>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
       <div className="contain-text">
           Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles rund um das Thema

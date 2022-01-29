@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: ``,
@@ -8,7 +12,17 @@ module.exports = {
     "gatsby-plugin-antd",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        lessOptions: {
+          javascriptEnabled: true,
+        },
+        modifyVars: {
+          "primary-color": "#f7931a",
+        },
+      },
+    },
     {
       resolve: "gatsby-omni-font-loader",
       options: {
@@ -33,4 +47,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

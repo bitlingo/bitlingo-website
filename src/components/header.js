@@ -9,14 +9,22 @@ const Header = ({ siteTitle }) => (
       <div className={"top-menu"}>
         <div className={"logo"}>
           <Link to="/" title={"Bitlingo"}>
-            <img alt={"Logo"} src={logo}/>
+            <img alt={"Logo"} src={logo} />
           </Link>
         </div>
 
-        <div className={"get-started"}>
-          <Link to="/lectures" title={"Bitlingo Vorträge"}>
-            Alle Vorträge
-          </Link>
+        <div className={"navbar-items"}>
+          <div className={"navbar-item"}>
+            <Link to="/lectures" title={"Bitlingo Vorträge"}>
+              Alle Vorträge
+            </Link>
+          </div>
+
+          <div className={"navbar-item"}>
+            <Link to="/contact" title={"Kontaktformular"}>
+              Kontakt
+            </Link>
+          </div>
         </div>
       </div>
     </div>
