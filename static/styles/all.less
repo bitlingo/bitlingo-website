@@ -62,6 +62,11 @@ body {
     background-color: darken(@bitlingo-brand, 5%);
     border-color: darken(@bitlingo-brand, 5%);
   }
+  .ant-btn.ant-btn-primary:active {
+    color: #ffffff;
+    background-color: @bitlingo-brand;
+    border-color: darken(@bitlingo-brand, 5%);
+  }
   .ant-btn-primary-loading {
     background-color: @bitlingo-brand;
   }
@@ -173,9 +178,16 @@ body {
       display: flex;
       justify-content: space-between;
 
-      .get-started {
+      .navbar-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .navbar-item {
         a {
-          width: 210px;
+          width: 180px;
           height: 37px;
           font-style: normal;
           font-weight: bold;
@@ -186,11 +198,12 @@ body {
           border-radius: 4px;
           text-align: center;
           color: #ffffff;
+          margin-left: 1rem;
         }
       }
 
       @media screen and (max-width: @break-small) {
-        .get-started {
+        .navbar-item {
           display: none;
         }
       }
