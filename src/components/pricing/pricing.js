@@ -28,7 +28,10 @@ const handleHoursSliderTooltip = (value) => {
 };
 
 const calculatePrice = (listeners, hours) => {
-  return -1 + 40 * listeners + 300 * hours;
+  return (
+    149 + 50 * (listeners - 1) + Math.max(100 * listeners, 200) * (hours - 1)
+  );
+  //return -1 + 40 * listeners + 300 * hours;
 };
 
 const Pricing = () => {

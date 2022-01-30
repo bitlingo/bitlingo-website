@@ -1,6 +1,12 @@
 import React, { useState, useRef } from "react";
 import { Form, Button, Input, Select, InputNumber } from "antd";
-import { UserOutlined, MailOutlined, CheckCircleOutlined, BankOutlined, PhoneOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  MailOutlined,
+  CheckCircleOutlined,
+  BankOutlined,
+  PhoneOutlined,
+} from "@ant-design/icons";
 import emailjs from "emailjs-com";
 import presentationData from "../data/presentationData";
 import "./contact.less";
@@ -8,7 +14,14 @@ import "./contact.less";
 const MailSent = () => {
   return (
     <div className="mail-sent">
-      <CheckCircleOutlined style={{fontSize: '28px', color: 'green', paddingTop: '8px', paddingRight: '8px'}} />
+      <CheckCircleOutlined
+        style={{
+          fontSize: "28px",
+          color: "green",
+          paddingTop: "8px",
+          paddingRight: "8px",
+        }}
+      />
       <h1>Danke für deine Nachricht!</h1>
     </div>
   );
@@ -25,7 +38,6 @@ const Contact = ({ presentationTitle, toogleContact }) => {
   const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (values) => {
-    debugger;
     setIsLoading(true);
     emailjs
       .send("service_km0nukb", "template_2kcug2l", values, userId)
@@ -44,7 +56,9 @@ const Contact = ({ presentationTitle, toogleContact }) => {
     </Select>
   );
 
-  return emailSent ? <MailSent /> : (
+  return emailSent ? (
+    <MailSent />
+  ) : (
     <Form
       ref={form}
       name="cf"
@@ -60,7 +74,13 @@ const Contact = ({ presentationTitle, toogleContact }) => {
         name="name"
       >
         <Input
-          addonBefore={selectBefore}
+          addonBefore={<Form.Item
+            name="anrede"
+            noStyle
+            initialValue="Herr"
+          >
+            {selectBefore}
+          </Form.Item>}
           placeholder="Max Mustermann"
           prefix={<UserOutlined className="site-form-item-icon" />}
         />
@@ -99,7 +119,6 @@ const Contact = ({ presentationTitle, toogleContact }) => {
         rules={[
           {
             required: false,
-            type: `number`,
             message: `Bitte gib deine Telefonnummer ein.`,
           },
         ]}
@@ -132,8 +151,8 @@ const Contact = ({ presentationTitle, toogleContact }) => {
         label="Voraussichtliche Anzahl der Teilnehmer:innen"
         rules={[
           {
-            type: 'number',
-            min: 1
+            type: "number",
+            min: 1,
           },
         ]}
         name="participants"
@@ -153,7 +172,12 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       </Form.Item>
 
       <Form.Item className="action-buttons">
-        <Button type="primary" htmlType="submit" disabled={false} loading={isLoading}>
+        <Button
+          type="primary"
+          htmlType="submit"
+          disabled={false}
+          loading={isLoading}
+        >
           Senden
         </Button>
         <Button disabled={false} onClick={toogleContact}>
