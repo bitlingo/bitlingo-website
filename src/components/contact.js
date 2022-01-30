@@ -1,6 +1,12 @@
 import React, { useState, useRef } from "react";
-import { Form, Button, Input, Select } from "antd";
-import { UserOutlined, MailOutlined, CheckCircleOutlined } from "@ant-design/icons";
+import { Form, Button, Input, Select, InputNumber } from "antd";
+import {
+  UserOutlined,
+  MailOutlined,
+  CheckCircleOutlined,
+  BankOutlined,
+  PhoneOutlined,
+} from "@ant-design/icons";
 import emailjs from "emailjs-com";
 import presentationData from "../data/presentationData";
 import "./contact.less";
@@ -8,7 +14,14 @@ import "./contact.less";
 const MailSent = () => {
   return (
     <div className="mail-sent">
-      <CheckCircleOutlined style={{fontSize: '28px', color: 'green', paddingTop: '8px', paddingRight: '8px'}} />
+      <CheckCircleOutlined
+        style={{
+          fontSize: "28px",
+          color: "green",
+          paddingTop: "8px",
+          paddingRight: "8px",
+        }}
+      />
       <h1>Danke für deine Nachricht!</h1>
     </div>
   );
@@ -36,7 +49,16 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       });
   };
 
-  return emailSent ? <MailSent /> : (
+  const selectBefore = (
+    <Select defaultValue="Herr" className="select-before">
+      <Option value="Herr">Herr</Option>
+      <Option value="Frau">Frau</Option>
+    </Select>
+  );
+
+  return emailSent ? (
+    <MailSent />
+  ) : (
     <Form
       ref={form}
       name="cf"
@@ -44,7 +66,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       onFinish={handleSubmit}
       layout="vertical"
       style={{ width: 600 }}
-      initialValues={{ lecture: presentationTitle }}
+      initialValues={{ lecture: presentationTitle, participants: 1 }}
     >
       <Form.Item
         label="Name"
@@ -52,8 +74,26 @@ const Contact = ({ presentationTitle, toogleContact }) => {
         name="name"
       >
         <Input
-          placeholder="Name"
+          addonBefore={<Form.Item
+            name="anrede"
+            noStyle
+            initialValue="Herr"
+          >
+            {selectBefore}
+          </Form.Item>}
+          placeholder="Max Mustermann"
           prefix={<UserOutlined className="site-form-item-icon" />}
+        />
+      </Form.Item>
+
+      <Form.Item
+        label="Firma"
+        rules={[{ required: false, message: `Bitte gib deine Firma ein.` }]}
+        name="company"
+      >
+        <Input
+          placeholder="Firma"
+          prefix={<BankOutlined className="site-form-item-icon" />}
         />
       </Form.Item>
 
@@ -75,6 +115,22 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       </Form.Item>
 
       <Form.Item
+        label="Telefonnummer"
+        rules={[
+          {
+            required: false,
+            message: `Bitte gib deine Telefonnummer ein.`,
+          },
+        ]}
+        name="phone"
+      >
+        <Input
+          placeholder="Deine Telefonnummer"
+          prefix={<PhoneOutlined className="site-form-item-icon" />}
+        />
+      </Form.Item>
+
+      <Form.Item
         label="Vortrag"
         rules={[{ required: true, message: `Bitte wähle einen Vortrag aus.` }]}
         name="lecture"
@@ -92,6 +148,22 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       </Form.Item>
 
       <Form.Item
+        label="Voraussichtliche Anzahl der Teilnehmer:innen"
+        rules={[
+          {
+            type: "number",
+            min: 1,
+          },
+        ]}
+        name="participants"
+      >
+        <InputNumber
+          style={{ width: 300 }}
+          prefix={<UserOutlined className="site-form-item-icon" />}
+        />
+      </Form.Item>
+
+      <Form.Item
         label="Nachricht"
         rules={[{ required: true, message: `Bitte gib eine Nachricht ein.` }]}
         name="message"
@@ -100,7 +172,12 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       </Form.Item>
 
       <Form.Item className="action-buttons">
-        <Button type="primary" htmlType="submit" disabled={false} loading={isLoading}>
+        <Button
+          type="primary"
+          htmlType="submit"
+          disabled={false}
+          loading={isLoading}
+        >
           Senden
         </Button>
         <Button disabled={false} onClick={toogleContact}>

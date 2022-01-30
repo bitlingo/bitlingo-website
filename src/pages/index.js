@@ -17,10 +17,11 @@ const IndexPage = () => (
     <div className={"page-header home container"}>
       <p>Bitcoin, Blockchain und Kryptowährungen einfach erklärt.</p>
       <div className="contain-text">
-          Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles rund um das Thema
-          Kryptowährungen und Blockchain-Technologie. Wir bieten Dir und Deinem
-          Unternehmen umfangreiche Live-Vorträge und Weiterbildungsseminare an
-          und sind die Ansprechpartner Nummer Eins für all Deine Fragen.
+        Wir sind <strong>Bitlingo</strong> - Deine Lernbegleiter für alles rund
+        um das Thema Kryptowährungen und Blockchain-Technologie. Wir bieten Dir
+        und Deinem Unternehmen umfangreiche Live-Vorträge und
+        Weiterbildungsseminare an und sind die Ansprechpartner Nummer Eins für
+        all Deine Fragen.
       </div>
       <img alt={"Team Foto"} src={cowork} style={{ borderRadius: "10px" }} />
     </div>
@@ -51,10 +52,11 @@ const IndexPage = () => (
             Dann kontaktiere uns gerne und wir finden gemeinsam einen Termin.
           </p>
         </div>
-
-        <div className={"button"}>
-          <a href="mailto:info@bitlingo.de">Ich möchte lernen!</a>
-        </div>
+        <Link to="/contact">
+          <div className={"button"}>
+            <span>Ich möchte lernen!</span>
+          </div>
+        </Link>
       </div>
     </div>
   </Layout>
