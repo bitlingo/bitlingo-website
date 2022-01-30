@@ -1,8 +1,26 @@
 .ant-btn {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .mail-sent {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+.ant-form-vertical {
+  width: 50%;
+}
+
+.ant-form-item {
+  width: 100%;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  .ant-form-item {
+    max-width: 300px;
+  }
+  .ant-form-vertical {
+    width: 100%;
+    margin: auto;
+  }
 }
