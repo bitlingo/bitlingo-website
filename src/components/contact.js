@@ -53,6 +53,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
     <Select defaultValue="Herr" className="select-before">
       <Option value="Herr">Herr</Option>
       <Option value="Frau">Frau</Option>
+      <Option value="Divers">Divers/Keine Angabe</Option>
     </Select>
   );
 
@@ -64,8 +65,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       name="cf"
       method="post"
       onFinish={handleSubmit}
-      layout="vertical"
-      style={{ width: 600 }}
+      layout={"vertical"}
       initialValues={{ lecture: presentationTitle, participants: 1 }}
     >
       <Form.Item
