@@ -1,4 +1,8 @@
-$break-small: 719px;
+@break-small: 719px;
+
+.contact-form.ant-btn-primary:hover {
+  color: @bitlingo-brand;
+}
 
 body {
   color: #797283;
@@ -22,21 +26,21 @@ body {
   }
 
   hr {
-    color: $bitlingo-brand;
+    color: @bitlingo-brand;
     border: 2px solid;
     border-radius: 10%;
     margin: 4rem 0;
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       margin: 2rem 0;
     }
   }
 
   a {
-    color: $bitlingo-brand;
+    color: @bitlingo-brand;
 
     &:hover,
     &:active {
-      color: darken($bitlingo-brand, 5);
+      color: darken(@bitlingo-brand, 5);
     }
   }
 
@@ -44,6 +48,42 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+  }
+
+  .ant-btn-primary {
+    color: #ffffff;
+    background-color: @bitlingo-brand;
+    background: @bitlingo-brand;
+    border-color: darken(@bitlingo-brand, 5%);
+  }
+  .ant-btn.ant-btn-primary:hover {
+    color: #ffffff;
+    background-color: darken(@bitlingo-brand, 5%);
+    border-color: darken(@bitlingo-brand, 5%);
+  }
+  .ant-btn.ant-btn-primary:active {
+    color: #ffffff;
+    background-color: @bitlingo-brand;
+    border-color: darken(@bitlingo-brand, 5%);
+  }
+  .ant-btn-primary-loading {
+    background-color: @bitlingo-brand;
+  }
+  .ant-btn-primary-loading::before {
+    background-color: @bitlingo-brand;
+  }
+  .ant-btn-primary-loading::after {
+    background-color: @bitlingo-brand;
+  }
+  .ant-btn-primary-loading:hover {
+    background-color: @bitlingo-brand;
+  }
+  .ant-btn-primary:active {
+    background-color: @bitlingo-brand;
+  }
+  .ant-btn:hover {
+    color: black;
+    border-color: darken(#000, 5%);
   }
 
   .button {
@@ -54,7 +94,7 @@ body {
     font-size: 16px;
     line-height: 37px;
     display: block;
-    background: $bitlingo-brand;
+    background: @bitlingo-brand;
     border-radius: 4px;
     text-align: center;
     color: #ffffff;
@@ -137,24 +177,32 @@ body {
       display: flex;
       justify-content: space-between;
 
-      .get-started {
+      .navbar-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .navbar-item {
         a {
-          width: 210px;
+          width: 180px;
           height: 37px;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
           line-height: 37px;
           display: block;
-          background: $bitlingo-brand;
+          background: @bitlingo-brand;
           border-radius: 4px;
           text-align: center;
           color: #ffffff;
+          margin-left: 1rem;
         }
       }
 
-      @media screen and (max-width: $break-small) {
-        .get-started {
+      @media screen and (max-width: @break-small) {
+        .navbar-item {
           display: none;
         }
       }
@@ -192,7 +240,7 @@ body {
 
     img {
       margin-top: 60px;
-      max-width: 55%;
+      max-width: 80%;
     }
 
     &.home {
@@ -200,11 +248,11 @@ body {
     }
 
     .contain-text {
-      width: 50%;
+      max-width: 800px;
       margin: auto;
     }
 
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       padding-top: 1px;
       padding-bottom: 50px;
 
@@ -232,37 +280,8 @@ body {
     margin: 2rem auto;
   }
 
-  .pricing-container {
-    text-align: center;
-    margin-bottom: 2rem;
-
-    .pricing-sliders {
-      display: flex;
-      flex-direction: column;
-      max-width: 50%;
-      margin: 2rem auto;
-
-      .slider {
-        margin: 2rem 0;
-      }
-      // antd override
-      .ant-slider-track {
-        background-color: $bitlingo-brand;
-      }
-      .ant-slider-handle {
-        background-color: lighten($bitlingo-brand, 10);
-      }
-      .ant-tooltip-open {
-        border-color: darken($bitlingo-brand, 10);
-      }
-    }
-    .price {
-      font-size: 36px;
-    }
-  }
-
   .features {
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       .col-6.first {
         order: 1;
       }
@@ -284,15 +303,15 @@ body {
   }
 
   .call-to-action {
-    background-color: $bitlingo-brand;
+    background-color: @bitlingo-brand;
     color: #ffffff;
-    padding: 65px 0;
+    padding: 45px 0;
     border-radius: 40px 40px 0px 0px;
 
     .container {
       display: flex;
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         display: block;
 
         .call-to-action__content {
@@ -305,14 +324,16 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-left: 16px;
+      margin-top: 80px;
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         display: block;
         width: 100%;
         margin-top: 30px;
       }
 
-      a {
+      span {
         font-size: 18px;
         background-color: #ffffff;
         width: 184px;
@@ -324,9 +345,9 @@ body {
         justify-content: center;
         font-weight: bold;
         flex-direction: column;
-        color: $bitlingo-brand;
+        color: @bitlingo-brand;
 
-        @media screen and (max-width: $break-small) {
+        @media screen and (max-width: @break-small) {
           margin: 0 auto;
         }
       }
@@ -364,12 +385,12 @@ body {
   footer {
     padding: 120px 0 45px;
 
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       padding: 50px 0 45px;
     }
 
     .widget__item {
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         padding: 15px 0 0;
       }
 
@@ -403,7 +424,7 @@ body {
 
               &:hover,
               &:active {
-                color: $bitlingo-brand;
+                color: @bitlingo-brand;
               }
             }
           }
@@ -413,7 +434,7 @@ body {
       .social {
         text-align: right;
 
-        @media screen and (max-width: $break-small) {
+        @media screen and (max-width: @break-small) {
           text-align: center;
         }
 
@@ -440,7 +461,7 @@ body {
       text-align: center;
       margin-top: 90px;
 
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: @break-small) {
         margin-top: 31px;
       }
 

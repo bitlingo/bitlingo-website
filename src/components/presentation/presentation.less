@@ -1,4 +1,4 @@
-$break-small: 719px;
+@break-small: 719px;
 
 .presentation__item {
   ul {
@@ -13,7 +13,7 @@ $break-small: 719px;
       align-self: center;
     }
 
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: @break-small) {
       .col-6.first {
         order: 1;
       }
@@ -22,6 +22,12 @@ $break-small: 719px;
         order: 2;
       }
     }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .presentation__content {

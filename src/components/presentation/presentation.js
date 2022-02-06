@@ -1,6 +1,35 @@
 import React from "react";
-import "./presentation.scss";
-import { Badge } from "antd";
+import "./presentation.less";
+import { Badge, Button } from "antd";
+import Contact from "../contact";
+
+const ContactPart = ({ presentationTitle }) => {
+  const [contactVisible, setContactVisible] = React.useState(false);
+
+  const handleContact = () => {
+    setContactVisible(!contactVisible);
+  };
+
+  return (
+    <div>
+      {contactVisible ? (
+        <div className="contact-form">
+          <Contact
+            presentationTitle={presentationTitle}
+            toogleContact={handleContact}
+          />
+          {/* <Button onClick={handleContact}>Kontaktformular schließen</Button> */}
+        </div>
+      ) : (
+        <div className="contact-form">
+          <Button type="primary" onClick={handleContact}>
+            Vortrag anfragen
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const LearningContent = ({ content }) => (
   <div>
@@ -43,12 +72,10 @@ const PresentationPictureLeft = ({
           {showLearningContent && learningContent ? (
             <LearningContent content={learningContent} />
           ) : null}
-          <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
-            <p>Vortrag anfragen</p>
-          </a>
         </div>
       </div>
     </div>
+    <ContactPart presentationTitle={title}></ContactPart>
   </div>
 );
 
@@ -69,9 +96,6 @@ const PresentationPictureRight = ({
           {showLearningContent && learningContent ? (
             <LearningContent content={learningContent} />
           ) : null}
-          <a href={`mailto:info@bitlingo.de?subject=Anfrage: ${title}`}>
-            <p>Vortrag anfragen</p>
-          </a>
         </div>
       </div>
       <div className={"col-6 first"}>
@@ -86,6 +110,7 @@ const PresentationPictureRight = ({
         </div>
       </div>
     </div>
+    <ContactPart presentationTitle={title}></ContactPart>
   </div>
 );
 

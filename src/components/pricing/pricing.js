@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Slider } from "antd";
-import "./pricing.scss";
+import { Button, Slider } from "antd";
+import "./pricing.less";
+import { Link } from "gatsby";
 
 const sliderProps = {
   defaultListeners: 10,
@@ -28,7 +29,10 @@ const handleHoursSliderTooltip = (value) => {
 };
 
 const calculatePrice = (listeners, hours) => {
-  return -1 + 40 * listeners + 300 * hours;
+  return (
+    149 + 50 * (listeners - 1) + Math.min(100 * listeners, 200) * (hours - 1)
+  );
+  //return -1 + 40 * listeners + 300 * hours;
 };
 
 const Pricing = () => {
@@ -42,6 +46,7 @@ const Pricing = () => {
   }, [listeners, hours]);
 
   return (
+    <div className="pricing-and-button-container">
     <div className="pricing-container">
       <h2>Preise</h2>
       <div className="description">
@@ -75,13 +80,12 @@ const Pricing = () => {
         ></Slider>
       </div>
       <span className="price">{`${price} € (inkl. MwSt.)`}</span>
-      <a
-        href={`mailto:info@bitlingo.de?subject=Anfrage eines ${hours} Stunden Vortrags für ${listeners} Teilnehmer:innen`}
-        className="button"
-      >
-        Vortrag anfragen
-      </a>
+      
     </div>
+    <Link to="/contact">
+    <Button className="anfragen-btn" type="primary">Vortrag anfragen</Button>
+  </Link>
+  </div>
   );
 };
 

@@ -70,3 +70,7 @@ yarn-error.log
 
 # IntelijIDEA
 .idea
+
+.env
+.env.development
+.env.production
