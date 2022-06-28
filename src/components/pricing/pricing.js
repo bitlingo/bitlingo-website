@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Slider } from "antd";
-import "./pricing.less";
+import "./Pricing.less";
 
 const sliderProps = {
   defaultListeners: 10,

@@ -21,6 +21,12 @@ const Header = ({ siteTitle }) => (
           </div>
 
           <div className={"navbar-item"}>
+            <Link to="/services" title={"Bitlingo Dienstleistungen"}>
+              Dienstleistungen
+            </Link>
+          </div>
+
+          <div className={"navbar-item"}>
             <Link to="/contact" title={"Kontaktformular"}>
               Kontakt
             </Link>

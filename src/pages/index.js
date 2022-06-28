@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import Team from "../components/team";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import Team from "../components/Team";
 import Pricing from "../components/pricing/pricing";
 import cowork from "../../static/images/cowork.jpg";
 import presentationData from "../data/presentationData";
-import Presentations from "../components/presentations";
+import PresentationGroup from "../components/PresentationGroup";
 
 const presentationDataLandingPage = presentationData.slice(0, 3);
 
@@ -28,7 +28,7 @@ const IndexPage = () => (
     <div className={"container"}>
       <div className={"features"}>
         <hr />
-        <Presentations
+        <PresentationGroup
           data={presentationDataLandingPage}
           showHr={true}
           showLearningContent={true}

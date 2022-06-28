@@ -1,7 +1,7 @@
 import React from "react";
-import "./presentation.less";
+import "./Presentation.less";
 import { Badge, Button } from "antd";
-import Contact from "../contact";
+import Contact from "../Contact/Contact";
 
 const ContactPart = ({ presentationTitle }) => {
   const [contactVisible, setContactVisible] = React.useState(false);

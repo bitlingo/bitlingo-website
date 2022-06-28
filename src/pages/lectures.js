@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import Presentations from "../components/presentations";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import PresentationGroup from "../components/PresentationGroup";
 
 import presentationData from "../data/presentationData";
 
@@ -10,7 +10,7 @@ const Lectures = () => (
     <Seo title="Vorträge" />
     <div className={"container"}>
       <div className={"features"}>
-        <Presentations data={presentationData} showHr={true} showLearningContent={true} />
+        <PresentationGroup data={presentationData} showHr={true} showLearningContent={true} />
       </div>
     </div>
   </Layout>

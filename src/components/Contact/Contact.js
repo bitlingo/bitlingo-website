@@ -2,8 +2,8 @@ import React, { useState, useRef } from "react";
 import { Form, Button, Input, Select } from "antd";
 import { UserOutlined, MailOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
-import presentationData from "../data/presentationData";
-import "./contact.less";
+import presentationData from "../../data/presentationData";
+import "./Contact.less";
 
 const MailSent = () => {
   return (

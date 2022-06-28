@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql, Link } from "gatsby";
 
-import Header from "./header";
+import Header from "./Header";
 import "../../static/styles/main.less";
 import logo from "../../static/images/logo/logo4.svg";
 import iconTwitter from "../../static/images/icon-twitter.svg";
