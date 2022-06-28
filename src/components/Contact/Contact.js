@@ -3,6 +3,7 @@ import { Form, Button, Input, Select } from "antd";
 import { UserOutlined, MailOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import emailjs from "emailjs-com";
 import presentationData from "../../data/presentationData";
+import servicesData from "../../data/servicesData";
 import "./Contact.less";
 
 const MailSent = () => {
@@ -14,7 +15,8 @@ const MailSent = () => {
   );
 };
 
-const Contact = ({ presentationTitle, toogleContact }) => {
+const Contact = ({ title, mode, toogleContact }) => {
+  const data = mode === "presentation" ? presentationData : servicesData;
   const form = useRef();
   const { TextArea } = Input;
   const { Option } = Select;
@@ -44,7 +46,7 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       onFinish={handleSubmit}
       layout="vertical"
       style={{ width: 600 }}
-      initialValues={{ lecture: presentationTitle }}
+      initialValues={{ title: title }}
     >
       <Form.Item
         label="Name"
@@ -75,18 +77,18 @@ const Contact = ({ presentationTitle, toogleContact }) => {
       </Form.Item>
 
       <Form.Item
-        label="Vortrag"
-        rules={[{ required: true, message: `Bitte wähle einen Vortrag aus.` }]}
-        name="lecture"
+        label={mode === "presentation" ? "Vortrag" : "Dienstleistung"}
+        rules={[{ required: true, message: mode === `presentation` ? `Bitte wähle einen Vortrag aus.` : `Bitte wähle eine Dienstleistung aus.` }]}
+        name="title"
       >
         <Select
           showSearch
-          placeholder="Wähle einen Vortrag"
+          placeholder = {mode === `presentation` ? `Bitte wähle einen Vortrag aus.` : `Bitte wähle eine Dienstleistung aus.`}
           optionFilterProp="children"
-          defaultValue={presentationTitle}
+          defaultValue={title}
         >
-          {presentationData.map((presentation) => (
-            <Option value={presentation.title}>{presentation.title}</Option>
+          {data.map((content) => (
+            <Option value={content.title}>{content.title}</Option>
           ))}
         </Select>
       </Form.Item>

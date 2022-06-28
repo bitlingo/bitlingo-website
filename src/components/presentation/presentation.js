@@ -15,7 +15,8 @@ const ContactPart = ({ presentationTitle }) => {
       {contactVisible ? (
         <div className="contact-form">
           <Contact
-            presentationTitle={presentationTitle}
+            mode="presentation"
+            title={presentationTitle}
             toogleContact={handleContact}
           />
           {/* <Button onClick={handleContact}>Kontaktformular schließen</Button> */}

@@ -14,7 +14,7 @@ const ContactPart = ({ serviceTitle }) => {
     <div>
       {contactVisible ? (
         <div className="contact-form">
-          <Contact serviceTitle={serviceTitle} toogleContact={handleContact} />
+          <Contact mode="service" title={serviceTitle} toogleContact={handleContact} />
           {/* <Button onClick={handleContact}>Kontaktformular schließen</Button> */}
         </div>
       ) : (
@@ -67,7 +67,6 @@ const ServicePictureRight = ({ title, text, picture, price }) => (
 );
 
 const Service = ({ index, data }) => {
-  debugger;
   return index % 2 === 0 ? (
     <ServicePictureLeft
       key={index}
