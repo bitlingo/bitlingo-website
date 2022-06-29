@@ -15,7 +15,6 @@ const ContactPart = ({ serviceTitle }) => {
       {contactVisible ? (
         <div className="contact-form">
           <Contact mode="service" title={serviceTitle} toogleContact={handleContact} />
-          {/* <Button onClick={handleContact}>Kontaktformular schließen</Button> */}
         </div>
       ) : (
         <div className="contact-form">
@@ -40,6 +39,7 @@ const ServicePictureLeft = ({ title, text, picture, price }) => (
         <div className={"service__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
+          <p>Kosten: {price}</p>
         </div>
       </div>
     </div>
@@ -54,6 +54,7 @@ const ServicePictureRight = ({ title, text, picture, price }) => (
         <div className={"service__content"}>
           <h3>{title}</h3>
           <p>{text}</p>
+          <p>Kosten: {price}</p>
         </div>
       </div>
       <div className={"col-6 first"}>

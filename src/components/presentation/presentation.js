@@ -19,7 +19,6 @@ const ContactPart = ({ presentationTitle }) => {
             title={presentationTitle}
             toogleContact={handleContact}
           />
-          {/* <Button onClick={handleContact}>Kontaktformular schließen</Button> */}
         </div>
       ) : (
         <div className="contact-form">
